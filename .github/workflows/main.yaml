@@ -18,6 +18,10 @@ jobs:
       run: npm install
     - name: Build Angular App
       run: npm run build
+    - name: Configure Git
+      run: |
+        git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
+        git config --global user.name "${{ secrets.GIT_USER_NAME }}"
     - name: Deploy to gh pages
       run: |
         npx angular-cli-ghpages --dir=dist/portfolio_2_0_0/browser --no-silent
