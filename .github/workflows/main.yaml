@@ -24,7 +24,7 @@ jobs:
         git config --global user.name "${{ secrets.GIT_USER_NAME }}"
     - name: Deploy to gh pages
       run: |
-        npx angular-cli-ghpages --dir=dist/portfolio_2_0_0 --no-silent
+        npx angular-cli-ghpages --dir=dist/portfolio2024/browser --no-silent
       env:
         CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
