@@ -1,0 +1,118 @@
+// Basic
+
+@mixin subtitles {
+    font-size: $font-size-23;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+@mixin label {
+    font-size: $font-size-14;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+@mixin label-bold {
+    font-size: $font-size-14;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+@mixin t2 {
+    font-size: $font-size-90;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+@mixin t2-bold {
+    font-size: $font-size-90;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+@mixin t3 {
+    font-size: $font-size-64;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+@mixin t4 {
+    font-size: $font-size-45;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+@mixin t4-bold {
+    font-size: $font-size-45;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+@mixin t5 {
+    font-size: $font-size-32;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+@mixin t5-bold {
+    font-size: $font-size-32;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+@mixin body {
+    font-size: $font-size-16;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+@mixin body-bold {
+    font-size: $font-size-16;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+// Components
+@mixin section {
+    @include t4-bold;
+    @media (min-width: 768px) {
+        @include t2-bold;
+    }
+}
+
+@mixin title {
+    @include t5;
+    @media (min-width: 768px) {
+        @include t3;
+    }
+}
+
+@mixin profession {
+    font-size: 1.813rem;
+    line-height: 120%;
+    @media (min-width) {
+        font-size: 3.625rem;
+    }
+}
+
+@mixin knowledge {
+    @include label-bold;
+    @media (min-width: 768px) {
+        @include body-bold;
+    }
+}
+
+@mixin contact {
+    font-size: 1.438rem;
+    line-height: 120%;
+    font-weight: 700;
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
