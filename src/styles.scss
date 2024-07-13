@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'styles/base/_base.scss';
-@import 'styles/mixins/flexgrid.scss';
-@import 'styles/mixins/typography.scss';
-@import 'styles/variables/variables.scss';
+@import 'styles/variables/variables';
+@import 'styles/mixins/typography';
+@import 'styles/base/fonts';
+@import 'styles/base/base';
+@import 'styles/mixins/flexgrid';
