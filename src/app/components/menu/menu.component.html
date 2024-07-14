@@ -1,0 +1,18 @@
+<div class="desktop-menu" *ngIf="viewport === 'desktop'; else mobileMenu">
+    <app-menu-button 
+        *ngFor="let item of menuItems" 
+        [label]="item" 
+        [viewport]="viewport"
+    ></app-menu-button>
+</div>
+<ng-template #mobileMenu>
+    <div class="mobile-menu--overlay">
+        <div class="mobile-menu">
+            <app-menu-button 
+                *ngFor="let item of menuItems" 
+                [label]="item" 
+                [viewport]="viewport"
+            ></app-menu-button>
+        </div>
+    </div>
+</ng-template>

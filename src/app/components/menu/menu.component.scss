@@ -1,0 +1,19 @@
+@import '../../../styles.scss';
+
+.desktop-menu {
+    @include flex(row, center, center, 1.813rem);
+    background-color: $color-blue-bg;
+    width: fit-content;
+}
+
+.mobile-menu--overlay {
+    @include position(fixed, 0, 0, 0, 0);
+    @include flex(row, center, center);
+    background-color: $color-blue-bg;
+}
+
+.mobile-menu {
+    @include flex(column, center, flex-start, 1.813rem);
+    width: fit-content;
+    height: fit-content;
+}
