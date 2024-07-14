@@ -1,4 +1,8 @@
+<app-menu
+    [viewport]="viewport"
+    [menuItems]="viewport === 'desktop' ? 
+        ['About me', 'Skills', 'Portfolio'] : 
+        ['About me', 'Skills', 'Portfolio', 'Contact']"
 >
-
-
+</app-menu>
 <router-outlet />

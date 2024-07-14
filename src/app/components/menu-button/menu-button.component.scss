@@ -1,0 +1,31 @@
+@import '../../../styles.scss';
+
+a {
+    @include subtitles;
+    text-decoration: none;
+}
+
+a[viewport='desktop']:hover {
+    color: $color-light-orange;
+}
+
+a[viewport='mobile'].active {
+    color: $color-light-orange;
+}
+
+a[viewport='mobile']::after {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 4px;
+    margin-top: 4px;
+    border-radius: 2px;
+    background-color: $color-dark-orange;
+    transition: width 0.3s ease-in-out;
+}
+
+a[viewport='mobile'].active::after {
+    width: 100%;
+}
+
+
