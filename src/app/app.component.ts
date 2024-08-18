@@ -2,15 +2,20 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from './components/menu/menu.component';
 import { HeaderComponent } from "./sections/header/header.component";
+import { MainButtonComponent } from './components/buttons/main-button/main-button.component';
+import { MainButtonType } from './shared/enums/main-button-type.enums';
+import { ViewportType } from './shared/enums/viewport-type.enums';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenuComponent, HeaderComponent],
+  imports: [RouterOutlet, MenuComponent, HeaderComponent, MainButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  viewport: 'desktop' | 'mobile' = 'desktop';
+  viewport: ViewportType = ViewportType.DESKTOP;
+
+  MainButtonType = MainButtonType;
 
   @HostListener('window:resize', ['$event'])
   onResize() {
@@ -22,6 +27,6 @@ export class AppComponent implements OnInit {
   }
 
   updateViewport() {
-    this.viewport = window.innerWidth < 768 ? 'mobile' : 'desktop';
+    this.viewport = window.innerWidth < 768 ? ViewportType.MOBILE : ViewportType.DESKTOP;
   }
 }
