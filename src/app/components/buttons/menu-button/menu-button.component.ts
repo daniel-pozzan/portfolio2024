@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ViewportType } from '../../shared/enums/viewport-type.enums';
+import { ViewportType } from '../../../shared/enums/viewport-type.enums';
 
 @Component({
   selector: 'app-menu-button',

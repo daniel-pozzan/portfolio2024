@@ -6,7 +6,7 @@
     ></app-menu-button>
 </div>
 <ng-template #mobileMenu>
-    <div class="mobile-menu--overlay">
+    <div class="mobile-menu--overlay" *ngIf="showMenu">
         <div class="mobile-menu">
             <app-menu-button 
                 *ngFor="let item of menuItems" 

@@ -4,11 +4,13 @@
             <h1>LOGO</h1>
             <app-menu
                 [viewport]="viewport"
+                [showMenu]="showMenu"
                 [menuItems]="viewport === 'desktop' ? 
                     ['About me', 'Skills', 'Portfolio'] : 
                     ['About me', 'Skills', 'Portfolio', 'Contact']"
             >
             </app-menu>
+            <app-burger-close-button (click)="toggleMenu()" *ngIf="viewport === ViewportType.MOBILE"></app-burger-close-button>
         </div>
     </div>
 </div>
