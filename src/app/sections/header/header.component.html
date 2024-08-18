@@ -1,0 +1,14 @@
+<div class="header-wrapper">
+    <div class="container">
+        <div class="header">
+            <h1>LOGO</h1>
+            <app-menu
+                [viewport]="viewport"
+                [menuItems]="viewport === 'desktop' ? 
+                    ['About me', 'Skills', 'Portfolio'] : 
+                    ['About me', 'Skills', 'Portfolio', 'Contact']"
+            >
+            </app-menu>
+        </div>
+    </div>
+</div>

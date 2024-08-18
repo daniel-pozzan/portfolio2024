@@ -1,0 +1,13 @@
+@import '../../../styles.scss';
+
+.header-wrapper {
+    height: 6.813rem;
+    background-color: $color-blue-bg;
+    @include flex(row, center, center);
+}
+
+.header {
+    @include flex(row, space-between, center);
+    background-color: burlywood;
+
+}
