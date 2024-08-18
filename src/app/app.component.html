@@ -1,4 +1,22 @@
 <app-header 
     [viewport]="viewport"
 ></app-header>
+<div class="billy-il-container">
+    <div class="container d-flex gap-5 flex-wrap" style="background-color: #141c2e; padding: 16px;">
+        <app-main-button [viewport]="viewport"></app-main-button>
+        <app-main-button
+            [viewport]="viewport"
+            [type]="MainButtonType.PRIMARY"
+        ></app-main-button>
+        <app-main-button
+            [viewport]="viewport"
+            [type]="MainButtonType.SECONDARY"
+        ></app-main-button>
+        <app-main-button
+            [viewport]="viewport"
+            [type]="MainButtonType.TERTIARY"
+        ></app-main-button>
+
+    </div>
+</div>
 <router-outlet />

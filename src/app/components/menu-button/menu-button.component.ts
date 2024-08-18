@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ViewportType } from '../../shared/enums/viewport-type.enums';
 
 @Component({
   selector: 'app-menu-button',
@@ -9,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './menu-button.component.scss'
 })
 export class MenuButtonComponent {
-  @Input() viewport: 'desktop' | 'mobile' = 'desktop';
+  @Input() viewport: ViewportType = ViewportType.DESKTOP;
   @Input() label: string;
   active: boolean = false;
 
