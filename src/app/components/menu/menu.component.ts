@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuButtonComponent } from '../menu-button/menu-button.component';
+import { MenuButtonComponent } from '../buttons/menu-button/menu-button.component';
 import { ViewportType } from '../../shared/enums/viewport-type.enums';
 
 @Component({
@@ -13,4 +13,5 @@ import { ViewportType } from '../../shared/enums/viewport-type.enums';
 export class MenuComponent {
   @Input() viewport: ViewportType = ViewportType.DESKTOP;
   @Input() menuItems: string[] = [];
+  @Input() showMenu: boolean = false;
 }
