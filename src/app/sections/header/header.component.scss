@@ -1,7 +1,9 @@
 @import '../../../styles.scss';
 
 .header-wrapper {
-    // height: 6.813rem;
+    @include mobile-portrait {
+        height: 15vh;
+    }
     height: 18vh;
     background-color: $color-blue-bg;
     @include flex(row, center, center);

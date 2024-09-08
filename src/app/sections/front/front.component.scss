@@ -2,6 +2,9 @@
 
 .front-section {
     background-color: $color-blue-bg;
+    @include mobile-portrait {
+        height: 85vh;
+    }
     height: 82vh;
     @include flex(column, top, center);
     background-image: url('../../../assets/images/background-blue.png');
