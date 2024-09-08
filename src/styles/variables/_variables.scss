@@ -21,3 +21,9 @@ $color-light-orange: #fa7902;
 $color-gradient-0: linear-gradient(0deg, #1A2743 0%, #27334B 14%, #141D2F 78%);
 $color-gradient-90: linear-gradient(90deg, #1A2743 0%, #27334B 14%, #141D2F 78%);
 $color-gradient-100: linear-gradient(100deg, #1A2743 0%, #27334B 14%, #141D2F 78%);
+
+$small-breakpoint: 36em; //576px 
+$medium-breakpoint: 48em; //768px
+$large-breakpoint: 62em; //992px
+$extra-large-breakpoint: 75em; //1200px
+$XXL-breakpoint: 87.5em; //1400px

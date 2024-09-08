@@ -1,0 +1,36 @@
+// < 36em (576px)
+@mixin mobile-portrait {
+    @media (max-width: ($small-breakpoint - 0.0625em)) {
+        @content;
+    }
+}
+// >= 36em (576px)
+@mixin mobile-landscape {
+    @media (min-width: $small-breakpoint) {
+        @content;
+    }
+}
+// >= 48em (768px)
+@mixin tablet {
+    @media (min-width: $medium-breakpoint) {
+        @content;
+    }
+}
+// >= 62em (992px)
+@mixin laptop {
+    @media (min-width: $large-breakpoint) {
+        @content;
+    }
+}
+// >= 75em (1200px)
+@mixin desktop {
+    @media (min-width: $extra-large-breakpoint) {
+        @content;
+    }
+}
+// >= 87.5em (1400px)
+@mixin desktop-large {
+    @media (min-width: $XXL-breakpoint) {
+        @content;
+    }
+}
