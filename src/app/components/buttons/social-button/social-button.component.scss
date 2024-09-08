@@ -1,17 +1,33 @@
+@import '../../../../styles.scss';
+
 .social-button {
     height: 1.875rem;
     width: 1.875rem;
     cursor: pointer;
 
+    &--desktop {
+        display: none;
+        @include laptop {
+            display: flex;
+            &:hover {
+                transform: scale(1.3);
+            } 
+        }
+    }
+
+    &--mobile {
+        display: flex;
+        @include laptop {
+            display: none;
+        }
+    }
+
     &--github {
         height: 2.375rem;
         width: 2.375rem;
         transform: translateY(0.15rem);
-        &:hover {
+        &.social-button--desktop:hover {
             transform: translateY(0.15rem) scale(1.3);
         }
-    }
-    &:hover {
-        transform: scale(1.3);
     }
 }

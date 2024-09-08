@@ -1,5 +1,13 @@
 <button 
-    class="main-button"
+    class="main-button main-button--desktop"
     [attr.viewport]="viewport" 
     [attr.type]="type"
 >{{ label }}</button>
+<button 
+    class="main-button main-button--mobile"
+    [ngClass]="{'main-button--active': isActive}"
+    [attr.viewport]="viewport" 
+    [attr.type]="type"
+    (click)="scrollToContactMobile()"
+>{{ label }}</button>
+

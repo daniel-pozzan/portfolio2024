@@ -15,8 +15,19 @@ export class MainButtonComponent {
   @Input() type: MainButtonType;
   @Input() label: string;
 
+  public isActive: boolean = false;
+
   constructor() {
     this.type = MainButtonType.DEFAULT;
     this.label = 'Text'
   }
+
+  scrollToContactMobile() {
+    this.isActive = true;
+    setTimeout(() => {
+      this.isActive = false;
+    }, 1000);
+  }
+
+
 }

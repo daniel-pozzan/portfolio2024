@@ -1,7 +1,6 @@
 @import '../../../../styles.scss';
 
 .main-button {
-    // width: 6.688rem;
     height: 3.625rem;
     text-decoration: none;
     @include subtitles;
@@ -11,7 +10,6 @@
     border-radius: 0.625rem;
     padding: 1.5rem;
     &[viewport='mobile']{
-        width: 5.813rem;
         height: 3.063rem;
         @include body;
     }
@@ -19,56 +17,85 @@
         color: $color-white;
         border-color: $color-light-orange;
         background-color: transparent;
-        &:hover {
-            background-color: $color-light-orange;
-            background-image: radial-gradient(circle at 50% 50%, $color-light-orange 1%, $color-blue-bg 1%);
-            background-position: 50% 50%;
-            background-size: 10000% 10000%;
-            transition: background-size 0.3s linear;
-        }
-        &:hover:active {
-            transition-duration: 0s;
-            background-size: 100% 100%;
+        @include laptop {
+            &:hover {
+                background-color: $color-light-orange;
+                background-image: radial-gradient(circle at 50% 50%, $color-light-orange 1%, $color-blue-bg 1%);
+                background-position: 50% 50%;
+                background-size: 10000% 10000%;
+                transition: background-size 0.3s linear;
+            }
+            &:hover:active {
+                transition-duration: 0s;
+                background-size: 100% 100%;
+            }
         }
     }
     &[type='primary']{
         color: $color-white;
-        border-color: $color-light-orange;
-        background-color: $color-light-orange;
-        &:hover {
+        background-image: radial-gradient(circle at 50% 50%, $color-dark-orange 1%, $color-light-orange 1%);
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+        transition: background-size 0.3s linear;
+        @include laptop {
             border-color: $color-light-orange;
-            background-image: radial-gradient(circle at 50% 50%, $color-dark-orange 1%, $color-light-orange 1%);
-            background-position: 50% 50%;
-            background-size: 10000% 10000%;
-            transition: background-size 0.3s linear;
-        }
-        &:hover:active {
-            transition-duration: 0s;
-            background-size: 100% 100%;
+            background-color: $color-light-orange;
+            &:hover {
+                border-color: $color-light-orange;
+                background-image: radial-gradient(circle at 50% 50%, $color-dark-orange 1%, $color-light-orange 1%);
+                background-position: 50% 50%;
+                background-size: 10000% 10000%;
+                transition: background-size 0.3s linear;
+            }
+            &:hover:active {
+                transition-duration: 0s;
+                background-size: 100% 100%;
+            }
         }
     }
     &[type='secondary']{
         color: $color-white;
         border-color: $color-dark-orange;
         background-color: $color-dark-orange;
-        &:hover {
-            border-color: $color-light-orange;
-            background-color: $color-light-orange;
-            background-image: radial-gradient(circle at 50% 50%, $color-light-orange 1%, $color-dark-orange 1%);
-            background-position: 50% 50%;
-            background-size: 10000% 10000%;
-            transition: background-size 0.3s linear;
-        }
-        &:hover:active{
-            transition-duration: 0s;
-            background-size: 100% 100%;
-
+        @include laptop {
+            &:hover {
+                border-color: $color-light-orange;
+                background-color: $color-light-orange;
+                background-image: radial-gradient(circle at 50% 50%, $color-light-orange 1%, $color-dark-orange 1%);
+                background-position: 50% 50%;
+                background-size: 10000% 10000%;
+                transition: background-size 0.3s linear;
+            }
+            &:hover:active{
+                transition-duration: 0s;
+                background-size: 100% 100%;
+            }
         }
     }
     &[type='tertiary']{
         color: $color-black;
         border-color: $color-white;
         background-color: $color-white;
+    }
+    &--desktop {
+        display: none;
+        @include laptop {
+            display: flex;
+        }
+    }
+    &--mobile {
+        display: flex;
+        @include laptop {
+            display: none;
+        }
+    }
+    &--active {
+        &[type='default']{
+            background-size: 10000% 10000%;
+        }
+        &[type='primary']{
+            background-size: 10000% 10000%;
+        }
     }
 }
 
