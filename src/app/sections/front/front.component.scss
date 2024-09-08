@@ -4,6 +4,7 @@
     background-color: $color-blue-bg;
     @include mobile-portrait {
         height: 90vh;
+        background-size: 100vw 130vw;
     }
     height: 82vh;
     @include flex(column, top, center);
@@ -45,8 +46,8 @@
         }
     }
     &__image {
-        height: 26.25rem;
-        width: 20.35rem;
+        height: 23.25rem;
+        width: 18.35rem;
         @include tablet {
             height: 31.25rem;
             width: 25rem;
