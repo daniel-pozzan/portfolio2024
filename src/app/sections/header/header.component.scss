@@ -2,7 +2,7 @@
 
 .header-wrapper {
     @include mobile-portrait {
-        height: 15vh;
+        height: 10vh;
     }
     height: 18vh;
     background-color: $color-blue-bg;

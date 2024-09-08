@@ -3,7 +3,7 @@
 .front-section {
     background-color: $color-blue-bg;
     @include mobile-portrait {
-        height: 85vh;
+        height: 90vh;
     }
     height: 82vh;
     @include flex(column, top, center);
