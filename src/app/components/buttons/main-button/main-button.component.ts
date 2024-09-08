@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MainButtonType } from '../../../shared/enums/main-button-type.enums';
 import { ViewportType } from '../../../shared/enums/viewport-type.enums';
 
 @Component({
   selector: 'app-main-button',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './main-button.component.html',
   styleUrl: './main-button.component.scss'
 })

@@ -1,7 +1,7 @@
 @import '../../../../styles.scss';
 
 .main-button {
-    width: 6.688rem;
+    // width: 6.688rem;
     height: 3.625rem;
     text-decoration: none;
     @include subtitles;
@@ -9,6 +9,7 @@
     border-width: 0.063rem;
     border-style: solid;
     border-radius: 0.625rem;
+    padding: 1.5rem;
     &[viewport='mobile']{
         width: 5.813rem;
         height: 3.063rem;
@@ -69,10 +70,5 @@
         border-color: $color-white;
         background-color: $color-white;
     }
-    // &:hover:active {
-    //     border-color: $color-white;
-    //     background-color: $color-white;
-    //     color: $color-black;
-    // }
 }
 

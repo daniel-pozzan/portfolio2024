@@ -1,0 +1,50 @@
+@import '../../../styles.scss';
+
+.front-section {
+    background-color: $color-blue-bg;
+    height: 82vh;
+    @include flex(row, center, top);
+    background-image: url('../../../assets/images/background-blue.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 30vw;
+    background-position: bottom;
+    &__headline {
+        width: 100%;
+        padding-left: 0.313rem;
+        &__name {
+            @include t2-bold;
+        }
+        &__vertical {
+            @include t3;
+            white-space: nowrap;
+            transform: rotate(-90deg);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        &__job {
+            font-size: 3.625rem;
+            line-height: 120%;
+            font-weight: 400;
+            color: $color-dark-orange;
+        }
+        &__actions {
+            @include flex(row, flex-start, center);
+        }
+    }
+    &__image {
+        height: 31.25rem;
+        width: 25rem;
+        object-fit: cover;
+        border-radius: 40%;
+        object-position: top; 
+    }
+    &__image-box {
+        background-image: url('../../../assets/images/shade-1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include flex(row, center, flex-end);
+        transform: translate(5%);
+    }
+}
+

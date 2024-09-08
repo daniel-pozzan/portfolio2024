@@ -1,3 +1,5 @@
+@import '../../../../styles.scss';
+
 svg {
     height: 80px;
     position: absolute;
@@ -17,7 +19,7 @@ svg {
   }
   .line {
     fill: none;
-    stroke: black;
+    stroke: $color-white;
     stroke-width: 6px;
     stroke-linecap: round;
     stroke-linejoin: round;

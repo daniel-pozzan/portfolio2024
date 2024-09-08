@@ -1,13 +1,23 @@
 @import '../../../styles.scss';
 
 .header-wrapper {
-    height: 6.813rem;
+    // height: 6.813rem;
+    height: 18vh;
     background-color: $color-blue-bg;
     @include flex(row, center, center);
+    box-shadow: 0 12px 0 6px $color-blue-bg;
 }
 
 .header {
     @include flex(row, space-between, center);
-    background-color: burlywood;
+    &__logo {
+        margin-left: 1.438rem;
+
+        @media (min-width: 48em) {
+            margin-left: 0;
+        }
+
+    }
 
 }
+

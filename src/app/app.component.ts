@@ -5,10 +5,11 @@ import { HeaderComponent } from "./sections/header/header.component";
 import { MainButtonComponent } from './components/buttons/main-button/main-button.component';
 import { MainButtonType } from './shared/enums/main-button-type.enums';
 import { ViewportType } from './shared/enums/viewport-type.enums';
+import { FrontComponent } from "./sections/front/front.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenuComponent, HeaderComponent, MainButtonComponent],
+  imports: [RouterOutlet, MenuComponent, HeaderComponent, MainButtonComponent, FrontComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
