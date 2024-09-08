@@ -10,20 +10,29 @@
     background-position: bottom;
     &__headline {
         width: 100%;
-        padding-left: 0.313rem;
         &__name {
-            @include t2-bold;
+            white-space: nowrap;
+            @include t4-bold;
+            @include tablet {
+                @include t2-bold;
+            }
         }
         &__vertical {
-            @include t3;
+            @include t5;
+            @include tablet {
+                @include t3;
+            }
             white-space: nowrap;
-            transform: rotate(-90deg);
+            writing-mode: vertical-rl;
             position: absolute;
-            top: 0;
-            bottom: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
         }
         &__job {
-            font-size: 3.625rem;
+            font-size: 1.813rem;
+            @include tablet {
+                font-size: 3.625rem;
+            }
             line-height: 120%;
             font-weight: 400;
             color: $color-dark-orange;
@@ -33,18 +42,27 @@
         }
     }
     &__image {
-        height: 31.25rem;
-        width: 25rem;
+        height: 26.25rem;
+        width: 20.35rem;
+        @include tablet {
+            height: 31.25rem;
+            width: 25rem;
+        }
         object-fit: cover;
         border-radius: 40%;
         object-position: top; 
     }
     &__image-box {
         background-image: url('../../../assets/images/shade-1.png');
-        background-size: cover;
+        background-size: contain;
+        @include tablet {
+            background-size: cover;
+        }
         background-repeat: no-repeat;
         @include flex(row, center, flex-end);
-        transform: translate(5%);
+        @include tablet {
+            transform: translate(5%);
+        }
     }
     &__social {
         padding-block: 1rem;
@@ -56,8 +74,14 @@
             background-color: $color-dark-orange;
             border-top-right-radius: 25%;
             border-bottom-right-radius: 25%;
+            @include mobile-portrait {
+                width: 4rem;
+            }
         }
         &__email {
+            @include mobile-portrait {
+                display: none;
+            }
             @include subtitles;
         }
     }
