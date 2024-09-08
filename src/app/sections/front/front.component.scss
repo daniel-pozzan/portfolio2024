@@ -3,7 +3,7 @@
 .front-section {
     background-color: $color-blue-bg;
     height: 82vh;
-    @include flex(row, center, top);
+    @include flex(column, top, center);
     background-image: url('../../../assets/images/background-blue.png');
     background-repeat: no-repeat;
     background-size: 100vw 30vw;
@@ -45,6 +45,21 @@
         background-repeat: no-repeat;
         @include flex(row, center, flex-end);
         transform: translate(5%);
+    }
+    &__social {
+        padding-block: 1rem;
+        width: 100%;
+        @include flex(row, flex-start, center, 1.5rem);
+        &__line {
+            height: 4px;
+            width: 6.25rem;
+            background-color: $color-dark-orange;
+            border-top-right-radius: 25%;
+            border-bottom-right-radius: 25%;
+        }
+        &__email {
+            @include subtitles;
+        }
     }
 }
 
