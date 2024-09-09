@@ -13,4 +13,12 @@ export class SocialButtonComponent {
   @Input() type: SocialButtonType = SocialButtonType.GITHUB;
 
   public SocialButtonType = SocialButtonType;
+  public isActive = false;
+
+  activate() {
+    this.isActive = true;
+    setTimeout(() => {
+      this.isActive = false;
+    }, 1000)
+  }
 }

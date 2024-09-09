@@ -73,13 +73,18 @@
         width: 100%;
         @include flex(row, flex-start, center, 1.5rem);
         &__line {
-            height: 4px;
             width: 6.25rem;
-            background-color: $color-dark-orange;
-            border-top-right-radius: 25%;
-            border-bottom-right-radius: 25%;
             @include mobile-portrait {
                 width: 4rem;
+            }
+            &::after {
+                content: '';
+                display: block;
+                height: 0.25rem;
+                width: 100%;
+                background-color: $color-dark-orange;
+                border-top-right-radius: 0.125rem;
+                border-bottom-right-radius: 0.125rem;
             }
         }
         &__email {
@@ -90,4 +95,3 @@
         }
     }
 }
-

@@ -4,6 +4,7 @@
     height: 1.875rem;
     width: 1.875rem;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 
     &--desktop {
         display: none;
@@ -29,5 +30,27 @@
         &.social-button--desktop:hover {
             transform: translateY(0.15rem) scale(1.3);
         }
+    }
+
+    &--active {
+        animation: shake 0.3s ease-in-out;
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
     }
 }
