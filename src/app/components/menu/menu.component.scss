@@ -13,7 +13,7 @@
     @include position(fixed, 6.813rem, 0, 0, 0);
     @include flex(row, center, center);
     background-color: $color-blue-bg;
-    z-index: 1;
+    z-index: 2;
 }
 
 .mobile-menu {
