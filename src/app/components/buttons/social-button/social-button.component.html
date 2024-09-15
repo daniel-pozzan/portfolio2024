@@ -3,13 +3,14 @@
         class="social-button social-button--github social-button--desktop" 
         src="./assets/images/github.png" 
         alt="Github Logo"
+        (click)="navigate('github')"
     >  
     <img 
         class="social-button social-button--github social-button--mobile"
         [ngClass]="{'social-button--active': isActive}" 
         src="./assets/images/github.png" 
         alt="Github Logo"
-        (click)="activate()"
+        (click)="activate('github')"
     >  
 </ng-container>
 <ng-container *ngIf="type === SocialButtonType.EMAIL">
@@ -17,13 +18,14 @@
         class="social-button social-button--desktop" 
         src="./assets/images/email.png" 
         alt="Email Logo"
+        (click)="navigate('email-url')"
     >
     <img 
         class="social-button social-button--mobile"
         [ngClass]="{'social-button--active': isActive}" 
         src="./assets/images/email.png" 
         alt="Email Logo"
-        (click)="activate()"
+        (click)="activate('email-url')"
     >
 </ng-container>
 <ng-container *ngIf="type === SocialButtonType.LINKEDIN">
@@ -31,12 +33,13 @@
         class="social-button social-button--desktop" 
         src="./assets/images/linkedin.png" 
         alt="Linkedin Logo"
+        (click)="navigate('linkedIn')"
     >
     <img 
         class="social-button social-button--mobile" 
         [ngClass]="{'social-button--active': isActive}" 
         src="./assets/images/linkedin.png" 
         alt="Linkedin Logo"
-        (click)="activate()"
+        (click)="activate('linkedIn')"
     >
 </ng-container>

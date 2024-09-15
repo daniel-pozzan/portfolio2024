@@ -36,6 +36,12 @@
     font-weight: 400;
 }
 
+@mixin t3-bold {
+    font-size: $font-size-64;
+    line-height: 120%;
+    font-weight: 700;
+}
+
 @mixin t4 {
     font-size: $font-size-45;
     line-height: 120%;
@@ -75,22 +81,40 @@
 // Components
 @mixin section {
     @include t4-bold;
-    @media (min-width: 768px) {
+    @include tablet {
+        @include t2-bold;
+    }
+    @include laptop {
+        @include t3-bold;
+    }
+    @include desktop {
         @include t2-bold;
     }
 }
 
 @mixin title {
     @include t5;
-    @media (min-width: 768px) {
+    @include tablet {
+        @include t3;
+    }
+    @include laptop {
+        @include t4;
+    }
+    @include desktop {
         @include t3;
     }
 }
 
-@mixin profession {
+@mixin job {
     font-size: 1.813rem;
     line-height: 120%;
-    @media (min-width) {
+    @include tablet {
+        font-size: 3.625rem;
+    }
+    @include laptop {
+        font-size: 2.58rem;
+    }
+    @include desktop {
         font-size: 3.625rem;
     }
 }
