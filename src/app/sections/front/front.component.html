@@ -1,6 +1,6 @@
 <div class="front-section">
-    <div class="container front-overflow">
-        <div class="row">
+    <div class="container h-100 d-flex d-lg-block front-overflow">
+        <div class="row h-100">
             <div class="col-lg-7 d-flex justify-content-center align-items-center order-lg-1 order-2 border-x">
                 <div class="front-section__headline">
                     <div class="row d-flex justify-content-center mt-4 mt-md-0">
@@ -22,16 +22,15 @@
                 </div>
             </div>
             <div class="col-lg-5 text-center front-section__image-box order-lg-2 order-1 border-x">
-                <img class="front-section__background" src="./assets/images/shade-1.png" alt="">
-                <img class="front-section__image" src="./assets/images/profile-small.webp" alt="">
+                <!-- <img class="front-section__background front-section__background--right" src="./assets/images/shade-2.png" alt="">
+                <img class="front-section__background front-section__background--left" src="./assets/images/shade-3.png" alt=""> -->
+                <img class="front-section__image" src="./assets/images/profile-small.webp" alt=""/>
             </div>
         </div>
     </div>
     <div class="front-section__social">
-        <div class="front-section__social__line"></div>
-        <app-social-button [type]="SocialButtonType.GITHUB"></app-social-button>
-        <app-social-button [type]="SocialButtonType.EMAIL"></app-social-button>
-        <app-social-button [type]="SocialButtonType.LINKEDIN"></app-social-button>
-        <p class="front-section__social__email">mail&#64;daniel-pozzan.com</p>
+        <div class="container">
+            <app-social-button-bar></app-social-button-bar>
+        </div>
     </div>
 </div>

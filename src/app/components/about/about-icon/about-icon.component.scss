@@ -1,0 +1,58 @@
+@import '../../../../styles.scss';
+.about-icon {
+    width: 3.125rem;
+    height: 3.75rem;
+
+    &[type='lightbulb'] {
+        fill: none;
+        stroke-width: 2;
+
+        path {
+            &.white {
+                stroke: $color-white;
+            }
+            &.black {
+                stroke: $color-black;
+            }
+            &.cream {
+                stroke: $color-cream;
+            }
+            &.grey {
+                stroke: $color-grey;
+            }
+            &.blue-bg {
+                stroke: $color-blue-bg;
+            }
+            &.dark-orange {
+                stroke: $color-dark-orange;
+            }
+            &.light-orange {
+                stroke: $color-light-orange;
+            }
+        }
+    }
+
+    &[type='puzzle'] {
+        &.white {
+            fill: $color-white;
+        }
+        &.black {
+            fill: $color-black;
+        }
+        &.cream {
+            fill: $color-cream;
+        }
+        &.grey {
+            fill: $color-grey;
+        }
+        &.blue-bg {
+            fill: $color-blue-bg;
+        }
+        &.dark-orange {
+            fill: $color-dark-orange;
+        }
+        &.light-orange {
+            fill: $color-light-orange;
+        }
+    }
+}

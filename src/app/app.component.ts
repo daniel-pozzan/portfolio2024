@@ -6,10 +6,19 @@ import { MainButtonComponent } from './components/buttons/main-button/main-butto
 import { MainButtonType } from './shared/enums/main-button-type.enums';
 import { ViewportType } from './shared/enums/viewport-type.enums';
 import { FrontComponent } from "./sections/front/front.component";
+import { AboutComponent } from './sections/about/about.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenuComponent, HeaderComponent, MainButtonComponent, FrontComponent],
+  imports: [
+    RouterOutlet, 
+    MenuComponent, 
+    HeaderComponent, 
+    MainButtonComponent, 
+    FrontComponent,
+    AboutComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

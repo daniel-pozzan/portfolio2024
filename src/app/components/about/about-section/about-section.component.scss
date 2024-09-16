@@ -1,0 +1,27 @@
+@import '../../../../styles.scss';
+
+:host {
+    display: block;
+    width: fit-content;
+}
+
+.about-section {
+    padding: 1rem;
+    @include mobile-landscape {
+        padding: 0;
+    }
+    width: 100%;
+    @include flex(column, center, flex-start, 2.188rem);
+    @include laptop {
+        width: 29.438rem;
+        @include flex(column, center, flex-end, 2.188rem);
+    }
+    &__title {
+        @include section;
+    }
+    &__cards {
+        @include flex(column, center, flex-end, 2.188rem);
+        width: 100%;
+    }
+  
+}
