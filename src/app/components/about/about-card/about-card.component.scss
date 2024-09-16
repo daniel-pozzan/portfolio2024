@@ -1,0 +1,18 @@
+@import '../../../../styles.scss';
+
+:host {
+    display: block;
+    width: 100%;
+    @include laptop {
+        width: 27.75rem;
+    }
+}
+
+.about-card {
+    @include flex(row, center, center, 2.188rem);
+    &__info {
+        &__text {
+            @include body;
+        }
+    }
+}

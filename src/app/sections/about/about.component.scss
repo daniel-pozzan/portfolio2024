@@ -1,0 +1,15 @@
+@import '../../../styles.scss';
+
+.about-section {
+    height: 82vh;
+    @include flex(row, center, center);
+    &__box {
+        @include flex(row, space-between, center);
+        &__image {
+            display: none;
+            @include laptop {
+                display: initial;
+            }
+        }
+    }
+}

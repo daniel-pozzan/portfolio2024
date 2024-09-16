@@ -1,0 +1,28 @@
+@import '../../../../styles.scss';
+
+
+.about-image {
+    width: 28.313rem;
+    height: 28.313rem;
+    border: 4px solid $color-light-orange;
+    border-radius: 50%;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $color-light-orange;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateX(-100%);
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+        object-position: bottom;
+    }
+}

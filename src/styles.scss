@@ -6,3 +6,13 @@
 @import 'styles/mixins/flexgrid';
 @import 'styles/mixins/position';
 @import 'styles/mixins/breakpoints';
+
+body {
+    background-color: $color-blue-bg !important;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

@@ -5,6 +5,7 @@
     @include laptop {
         overflow-y: hidden;
     }
+    position: relative;
 }
 
 .front-section {
@@ -13,6 +14,7 @@
     @include flex(column, top, center);
     background-image: url('../../../assets/images/background-blue.png');
     background-repeat: no-repeat;
+    overflow-x: hidden;
     @include mobile-portrait {
         height: 90vh;
         background-size: 100vw 130vw;
@@ -49,22 +51,11 @@
             @include flex(row, flex-start, center);
         }
     }
-    &__background {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        position: absolute;
-        @include desktop {
-            object-position: 130%;
-        }
-    }
     &__image {
         height: 23.25rem;
         width: 18.35rem;
         z-index: 1;
         @include tablet {
-            // height: 31.25rem;
-            // width: 25rem;
             height: calc(22rem + 12.5vh);
             width: calc(17.6rem + 10vh);
         }
@@ -73,44 +64,24 @@
         object-position: top; 
     }
     &__image-box {
-        // background-image: url('../../../assets/images/shade-1.png');
-        // background-size: contain;
-        @include mobile-landscape {
-            background-size: cover;
-        }
-        @include laptop {
-            background-size: contain;
-        }
-        @include desktop {
-            // background-size: 93% 95%;
-            // background-position: 250%;
-        }
-        // background-repeat: no-repeat;
         @include flex(row, center, flex-end);
         position: relative;
+        background-image: url('/assets/images/shade-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        background-position: center;
         @include laptop {
-            justify-content: flex-end;
+            background-size: 100%;
+            justify-content: center;
+            align-items: center;
         }
     }
     &__social {
         padding-block: 1rem;
         width: 100%;
-        @include flex(row, flex-start, center, 1.5rem);
-        &__line {
-            width: 6.25rem;
-            @include mobile-portrait {
-                width: 4rem;
-            }
-            &::after {
-                content: '';
-                display: block;
-                height: 0.25rem;
-                width: 100%;
-                background-color: $color-dark-orange;
-                border-top-right-radius: 0.125rem;
-                border-bottom-right-radius: 0.125rem;
-            }
-        }
+        @include flex(row, center, center);
+      
         &__email {
             @include mobile-portrait {
                 display: none;
