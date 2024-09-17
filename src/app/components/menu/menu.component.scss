@@ -10,7 +10,7 @@
     @include mobile-portrait {
         @include position(fixed, 10vh, 0, 0, 0);
     }
-    @include position(fixed, 6.813rem, 0, 0, 0);
+    @include position(fixed, 18vh, 0, 0, 0);
     @include flex(row, center, center);
     background-color: $color-blue-bg;
     z-index: 2;

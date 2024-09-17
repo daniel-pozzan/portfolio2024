@@ -2,8 +2,10 @@
 
 
 .about-image {
-    width: 28.313rem;
-    height: 28.313rem;
+    // width: 28.313rem;
+    // height: 28.313rem;
+    width: calc(23.313rem + 5.33vh);
+    height: calc(23.313rem + 5.33vh);
     border: 4px solid $color-light-orange;
     border-radius: 50%;
     position: relative;

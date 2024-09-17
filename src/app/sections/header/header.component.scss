@@ -8,6 +8,12 @@
     background-color: $color-blue-bg;
     @include flex(row, center, center);
     box-shadow: 0 12px 0 6px $color-blue-bg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.8;
 }
 
 .header {

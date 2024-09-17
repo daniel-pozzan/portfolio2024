@@ -1,5 +1,12 @@
 @import '../../../styles.scss';
 
+.header-offset {
+    height: 18vh;
+    @include mobile-portrait {
+        height: 10vh;
+    }
+}
+
 .front-overflow {
     overflow-y: auto;
     @include laptop {
