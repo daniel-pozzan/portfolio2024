@@ -6,8 +6,11 @@
     ></app-menu-button>
 </div>
 <ng-template #mobileMenu>
-    <div class="mobile-menu--overlay" *ngIf="showMenu">
-        <div class="mobile-menu">
+    <div 
+        class="mobile-menu--overlay" 
+        [ngClass]="{'mobile-menu--overlay--full-height': showMenu}"
+    >
+        <div class="mobile-menu" *ngIf="showMenu">
             <app-menu-button 
                 *ngFor="let item of menuItems" 
                 [label]="item" 

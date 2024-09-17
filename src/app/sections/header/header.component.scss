@@ -5,22 +5,25 @@
         height: 10vh;
     }
     height: 18vh;
-    background-color: $color-blue-bg;
+    background-color: $color-blue-bg-opacity;
     @include flex(row, center, center);
-    box-shadow: 0 12px 0 6px $color-blue-bg;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
-    opacity: 0.8;
+    backdrop-filter: blur(0.5rem);
+    &--no-blur {
+        backdrop-filter: initial;
+    }
 }
 
 .header {
     @include flex(row, space-between, center);
     &__logo {
         margin-left: 1.438rem;
-
+        position: relative;
+        z-index: 1;
         @media (min-width: 48em) {
             margin-left: 0;
         }
