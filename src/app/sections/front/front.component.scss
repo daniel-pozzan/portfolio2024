@@ -1,9 +1,5 @@
 @import '../../../styles.scss';
 
-.custom-border {
-    border: 2px solid white;
-}
-
 .header-offset {
     height: 18vh;
     @include mobile-portrait {
@@ -40,28 +36,6 @@
         background-size: 100vw 30vw;
     }
     background-position: bottom;
-    &__headline {
-        width: 100%;
-        &__name {
-            white-space: nowrap;
-            @include section;
-        }
-        &__vertical {
-            @include title;
-            white-space: nowrap;
-            writing-mode: vertical-rl;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%) rotate(180deg);
-        }
-        &__job {
-            @include job;
-            color: $color-dark-orange;
-        }
-        &__actions {
-            @include flex(row, flex-start, center);
-        }
-    }
     &__image {
         height: 23.25rem;
         width: 18.35rem;
