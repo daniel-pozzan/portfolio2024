@@ -1,5 +1,9 @@
 @import '../../../styles.scss';
 
+.custom-border {
+    border: 2px solid white;
+}
+
 .header-offset {
     height: 18vh;
     @include mobile-portrait {
@@ -63,19 +67,18 @@
         width: 18.35rem;
         z-index: 1;
         @include tablet {
-            height: calc(22rem + 12.5vh);
-            width: calc(17.6rem + 10vh);
+            height: calc(6rem + 25vw);
+            width: calc(5rem + 20vw);
         }
         object-fit: cover;
-        border-radius: 40%;
-        object-position: top; 
+        border-radius: 36%;
     }
     &__image-box {
         @include flex(row, center, flex-end);
         position: relative;
         background-image: url('../../../assets/images/shade-1.png');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
 
         background-position: center;
         @include laptop {

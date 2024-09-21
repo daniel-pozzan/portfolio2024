@@ -16,3 +16,14 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.container {
+    border: 2px solid white;
+    max-width: 93vw;
+    @include desktop-large {
+        max-width: 80vw;
+    }
+    @include mobile-portrait {
+        max-width: initial;
+    }
+}

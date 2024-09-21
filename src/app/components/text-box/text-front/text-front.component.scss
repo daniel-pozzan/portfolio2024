@@ -1,0 +1,44 @@
+@import '../../../../styles.scss';
+
+.text-front {
+    &__headline {
+        @include flex(row, center, center, 1rem);
+        @include desktop-large {
+            gap: calc(1rem + 0.5vw);
+        }
+        &__horizontal {
+            @include flex(column, center, flex-start, 1rem);
+            @include desktop-large {
+                gap: calc(1rem + 0.5vw);
+            }
+            h1 {
+                @include section;
+                white-space: nowrap;
+                line-height: 80% !important;
+            }
+            h2 {
+                @include job;
+                color: $color-dark-orange;
+                line-height: 80% !important;
+            }
+        }
+        &__vertical {
+            @include flex(row, flex-start, flex-start);
+            h3 {
+                writing-mode: vertical-rl;
+                transform: rotate(-180deg);
+                @include title;
+            }
+        }
+    }
+    app-main-button {
+        padding-top: 1rem;
+        @include desktop-large {
+            padding-top: calc(1rem + 0.5vw);
+        }
+        @include flex(row, center, center);
+        @include laptop {
+            justify-content: flex-start;
+        }
+    }
+}

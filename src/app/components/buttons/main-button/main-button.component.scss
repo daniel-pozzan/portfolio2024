@@ -1,7 +1,8 @@
 @import '../../../../styles.scss';
 
 .main-button {
-    height: 3.625rem;
+    // height: 3.625rem;
+    height: calc(1.9rem + 2vw);
     text-decoration: none;
     @include subtitles;
     @include flex(row, center, center);
@@ -9,6 +10,10 @@
     border-style: solid;
     border-radius: 0.625rem;
     padding: 1.5rem;
+    @include desktop-large {
+        height: calc(1rem + 3vw);
+        border-radius: 1rem;
+    }
     &[viewport='mobile']{
         height: 3.063rem;
         @include body;

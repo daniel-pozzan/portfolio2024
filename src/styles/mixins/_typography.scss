@@ -1,7 +1,8 @@
 // Basic
 
 @mixin subtitles {
-    font-size: $font-size-23;
+    // font-size: $font-size-23;
+    font-size: calc(0.5rem + 1.3vw);
     line-height: 120%;
     font-weight: 400;
 }
@@ -19,49 +20,57 @@
 }
 
 @mixin t2 {
-    font-size: $font-size-90;
+    // font-size: $font-size-90;
+    font-size: calc(3.014rem + 2vw);
     line-height: 120%;
     font-weight: 400;
 }
 
 @mixin t2-bold {
-    font-size: $font-size-90;
+    // font-size: $font-size-90;
+    font-size: calc(3.014rem + 2vw);
     line-height: 120%;
     font-weight: 700;
 }
 
 @mixin t3 {
-    font-size: $font-size-64;
+    // font-size: $font-size-64;
+    font-size: calc(2.56rem + 2vw);
     line-height: 120%;
     font-weight: 400;
 }
 
 @mixin t3-bold {
-    font-size: $font-size-64;
+    // font-size: $font-size-64;
+    font-size: calc(2.56rem + 2vw);
     line-height: 120%;
     font-weight: 700;
 }
 
 @mixin t4 {
-    font-size: $font-size-45;
+    // font-size: $font-size-45;
+    font-size: calc(1.9rem + 2vw);
     line-height: 120%;
     font-weight: 400;
 }
 
 @mixin t4-bold {
-    font-size: $font-size-45;
+    // font-size: $font-size-45;
+    font-size: calc(1.9rem + 2vw);
     line-height: 120%;
     font-weight: 700;
 }
 
 @mixin t5 {
-    font-size: $font-size-32;
+    // font-size: $font-size-32;
+    font-size: calc(1.18rem + 2vw);
     line-height: 120%;
     font-weight: 400;
 }
 
 @mixin t5-bold {
-    font-size: $font-size-32;
+    // font-size: $font-size-32;
+    font-size: calc(1.18rem + 2vw);
     line-height: 120%;
     font-weight: 700;
 }
@@ -90,18 +99,26 @@
     @include desktop {
         @include t2-bold;
     }
+    @include desktop-large {
+        font-size: calc(1.014rem + 4vw);
+        font-weight: 700;
+    }
 }
 
 @mixin title {
-    @include t5;
+    font-size: calc(1.48rem + 2vw);
+    line-height: 80%;
     @include tablet {
-        @include t3;
+        font-size: calc(2rem + 2vw);
     }
     @include laptop {
-        @include t4;
+        font-size: calc(1.5rem + 2vw);
     }
     @include desktop {
-        @include t3;
+        font-size: calc(1.65rem + 2vw);
+    }
+    @include desktop-large {
+        font-size: calc(1.85rem + 2vw); 
     }
 }
 
@@ -109,13 +126,13 @@
     font-size: 1.813rem;
     line-height: 120%;
     @include tablet {
-        font-size: 3.625rem;
+        font-size: calc(1.52rem + 2vw);
     }
     @include laptop {
-        font-size: 2.58rem;
+        font-size: calc(1.12rem + 2vw);
     }
     @include desktop {
-        font-size: 3.625rem;
+        font-size: calc(1.52rem + 2vw);    
     }
 }
 
