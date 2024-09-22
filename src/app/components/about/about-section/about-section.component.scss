@@ -11,7 +11,7 @@
         padding: 0;
     }
     width: 100%;
-    @include flex(column, center, flex-start, 2.188rem);
+    @include flex(column, center, flex-start, 1.188rem);
     @include laptop {
         width: calc(10rem + 35vw);
         @include flex(column, center, flex-end, 2.188rem);
@@ -28,7 +28,10 @@
         }
     }
     &__cards {
-        @include flex(column, center, flex-end, 2.188rem);
+        @include flex(column, center, flex-end, 1.188rem);
+        @include laptop {
+            gap: 2.188rem;
+        }
         width: 100%;
     }
   

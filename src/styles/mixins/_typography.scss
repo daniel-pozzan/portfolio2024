@@ -79,7 +79,7 @@
     // font-size: $font-size-16;
     font-size: 1rem;
     @include tablet {
-        font-size: 1.384rem;
+        font-size: 1.184rem;
     }
     @include laptop {
         font-size: calc(0.3rem + 1vw);
@@ -97,10 +97,10 @@
 // Components
 @mixin section {
     @include t4-bold;
+    // @include tablet {
+    //     @include t2-bold;
+    // }
     @include tablet {
-        @include t2-bold;
-    }
-    @include laptop {
         @include t3-bold;
     }
     @include desktop {
@@ -115,10 +115,8 @@
 @mixin title {
     font-size: calc(1.48rem + 2vw);
     line-height: 80%;
+
     @include tablet {
-        font-size: calc(2rem + 2vw);
-    }
-    @include laptop {
         font-size: calc(1.5rem + 2vw);
     }
     @include desktop {
@@ -133,9 +131,6 @@
     font-size: 1.813rem;
     line-height: 120%;
     @include tablet {
-        font-size: calc(1.52rem + 2vw);
-    }
-    @include laptop {
         font-size: calc(1.12rem + 2vw);
     }
     @include desktop {
