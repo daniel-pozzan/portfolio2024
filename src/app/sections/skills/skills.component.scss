@@ -1,7 +1,12 @@
 @import '../../../styles.scss';
 
+.container {
+    border: 1px solid white;
+}
+
 .skills-section {
     height: 82vh;
+    @include flex(row, center, center);
     @include mobile-portrait {
         height: 90vh;
     }

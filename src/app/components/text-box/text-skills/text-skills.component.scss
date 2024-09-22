@@ -1,0 +1,41 @@
+@import '../../../../styles.scss';
+
+.text-skills {
+    border: 1px solid white;
+    @include flex(column, center, center, 1.188rem);
+    @include laptop {
+        gap: 2.188rem;
+    }
+    @include desktop-large {
+        gap: calc(1.188rem + 1vw);
+    }
+    &__content {
+        @include flex(column, center, flex-end, 1.188rem);
+        @include laptop {
+            gap: 2.188rem;
+        }
+        @include desktop-large {
+            gap: calc(1.188rem + 1vw);
+        }
+        &__title {
+            @include section;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                height: 0.25rem;
+                width: 100%;
+                background-color: $color-dark-orange;
+                border-top-left-radius: 0.125rem;
+                border-bottom-left-radius: 0.125rem;
+                position: absolute;
+                top: 50%;
+                transform: translateX(105%);
+            }
+        }
+        &__paragraph {
+            @include body;
+            text-align: end;
+        }
+    }
+}
