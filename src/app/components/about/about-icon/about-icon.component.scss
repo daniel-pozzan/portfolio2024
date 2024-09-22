@@ -1,8 +1,14 @@
 @import '../../../../styles.scss';
+:host {
+    display: block;
+    width: 4.834rem;
+    height: 4.834rem;
+    @include tablet {
+        width: calc(1rem + 4vw);
+        height: calc(1rem + 4vw);
+    }
+}
 .about-icon {
-    width: 3.125rem;
-    height: 3.75rem;
-
     &[type='lightbulb'] {
         fill: none;
         stroke-width: 2;

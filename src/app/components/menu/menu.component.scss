@@ -3,6 +3,9 @@
 .desktop-menu {
     @include flex(row, center, center, 1.813rem);
     width: fit-content;
+    @include desktop-large {
+        gap: calc(1.413rem + 1vw);
+    }
 }
 
 .mobile-menu--overlay {

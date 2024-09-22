@@ -4,12 +4,18 @@
     display: block;
     width: 100%;
     @include laptop {
-        width: 27.75rem;
+        width: calc(15rem + 24vw)
+    }
+    @include desktop-large {
+        width: calc(15rem + 26vw);
     }
 }
 
 .about-card {
-    @include flex(row, center, center, 2.188rem);
+    @include flex(row, center, center, 1.188rem);
+    @include tablet {
+        gap: 2.188rem
+    }
     &__info {
         &__text {
             @include body;

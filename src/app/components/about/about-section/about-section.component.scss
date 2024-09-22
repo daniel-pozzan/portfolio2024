@@ -13,11 +13,19 @@
     width: 100%;
     @include flex(column, center, flex-start, 2.188rem);
     @include laptop {
-        width: 29.438rem;
+        width: calc(10rem + 35vw);
         @include flex(column, center, flex-end, 2.188rem);
+    }
+    @include desktop-large {
+        gap: calc(1.188rem + 1vw);
     }
     &__title {
         @include section;
+    }
+    &__content {
+        &__text {
+            @include body;
+        }
     }
     &__cards {
         @include flex(column, center, flex-end, 2.188rem);

@@ -1,11 +1,8 @@
 @import '../../../../styles.scss';
 
-
 .about-image {
-    // width: 28.313rem;
-    // height: 28.313rem;
-    width: calc(23.313rem + 5.33vh);
-    height: calc(23.313rem + 5.33vh);
+    width: calc(5.313rem + 18.33vw);
+    height: calc(5.313rem + 18.33vw);
     border: 4px solid $color-light-orange;
     border-radius: 50%;
     position: relative;
