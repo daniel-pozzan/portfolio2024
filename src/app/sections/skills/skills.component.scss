@@ -1,0 +1,8 @@
+@import '../../../styles.scss';
+
+.skills-section {
+    height: 82vh;
+    @include mobile-portrait {
+        height: 90vh;
+    }
+}
