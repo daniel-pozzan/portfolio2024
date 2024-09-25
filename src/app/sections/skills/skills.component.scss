@@ -6,6 +6,22 @@
 
 .skills-section {
     height: 82vh;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid lightblue;
+    &__shade {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 90%;
+        object-fit: contain;
+        transform: rotate(-90deg) translate(-75%, 50%);
+        border: 1px solid white;
+
+        @include laptop {
+            transform: rotate(-90deg) translate(-35%, 50%);  
+        }
+    }
     @include flex(row, center, center);
     @include mobile-portrait {
         height: 90vh;
