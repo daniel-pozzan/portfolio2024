@@ -1,11 +1,18 @@
 <div class="skills-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-
+    <img class="skills-section__shade" src="assets/images/shade-5.png" alt="shade-5" class="skills-section__shade">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-6 h-100 order-2 order-lg-1">
+                <app-skill-icon-container></app-skill-icon-container>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 order-1 order-lg-2">
                 <app-text-skills></app-text-skills>
+            </div>
+            <div class="col-12 order-3 d-flex justify-content-center d-lg-none mt-3 position-relative z-index-1">
+                <app-main-button
+                    [label]="'Get in touch'"
+                    [type]="MainButtonType.PRIMARY"
+                ></app-main-button>
             </div>
         </div>
     </div>

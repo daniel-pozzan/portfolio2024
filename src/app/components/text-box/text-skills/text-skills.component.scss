@@ -2,7 +2,11 @@
 
 .text-skills {
     border: 1px solid white;
+    margin-bottom: 1.188rem;
     @include flex(column, center, center, 1.188rem);
+    @include laptop {
+        margin-bottom: 0;
+    }
     @include laptop {
         gap: 2.188rem;
     }
@@ -20,22 +24,37 @@
         &__title {
             @include section;
             position: relative;
+            padding-right: 7.25rem;
+            @include mobile-landscape {
+                padding-right: 0;
+            }
             &::after {
                 content: '';
                 display: block;
+                width: 6.25rem;
                 height: 0.25rem;
-                width: 100%;
                 background-color: $color-dark-orange;
                 border-top-left-radius: 0.125rem;
                 border-bottom-left-radius: 0.125rem;
                 position: absolute;
+                right: 0;
                 top: 50%;
-                transform: translateX(105%);
+                @include mobile-landscape {
+                    width: 100%;
+                    transform: translateX(105%);
+                }
             }
         }
         &__paragraph {
             @include body;
             text-align: end;
+        }
+    }
+
+    app-main-button {
+        display: none;
+        @include laptop {
+            display: initial;
         }
     }
 }

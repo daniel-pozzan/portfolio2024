@@ -1,0 +1,39 @@
+@import '../../../../styles.scss';
+
+.babbala {
+    gap: 2rem;
+}
+
+.skill-icon {
+    @include flex(column, center, center, 1rem);
+    &__image {
+        height: 4rem;
+        width: 4rem;
+        @include tablet {
+            height: 3rem;
+            width: 3rem;
+        }
+        @include laptop {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+        @include desktop {
+            height: 3rem;
+            width: 3rem;
+        }
+        @include desktop-large {
+            width: calc(0.1rem + 4vw);
+            height: calc(0.1rem + 4vw);
+        }
+        
+        svg {
+            height: 100%;
+            width: 100%;
+            fill: $color-white;
+        }
+    }
+    &__text {
+        @include knowledge;
+        white-space: nowrap;
+    }
+}

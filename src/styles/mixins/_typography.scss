@@ -89,7 +89,13 @@
 }
 
 @mixin body-bold {
-    font-size: $font-size-16;
+    font-size: 1rem;
+    @include tablet {
+        font-size: 1.184rem;
+    }
+    @include laptop {
+        font-size: calc(0.3rem + 1vw);
+    }
     line-height: 120%;
     font-weight: 700;
 }
