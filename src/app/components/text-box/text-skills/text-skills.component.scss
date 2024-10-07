@@ -1,7 +1,6 @@
 @import '../../../../styles.scss';
 
 .text-skills {
-    border: 1px solid white;
     margin-bottom: 1.188rem;
     @include flex(column, center, center, 1.188rem);
     @include laptop {
