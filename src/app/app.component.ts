@@ -8,7 +8,7 @@ import { ViewportType } from './shared/enums/viewport-type.enums';
 import { FrontComponent } from "./sections/front/front.component";
 import { AboutComponent } from './sections/about/about.component';
 import { SkillsComponent } from './sections/skills/skills.component';
-
+import { PortfolioComponent } from './sections/portfolio/portfolio.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -19,7 +19,8 @@ import { SkillsComponent } from './sections/skills/skills.component';
     MainButtonComponent, 
     FrontComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    PortfolioComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

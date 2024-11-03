@@ -1,0 +1,32 @@
+@import '../../../styles.scss';
+
+.project-card {
+    border: 1px solid lightblue;
+    @include flex(column, flex-end, center);
+    gap: 2rem;
+    @include laptop {
+        flex-direction: row;
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+    }
+    &__image {
+        border: 1px solid red;
+        @include mobile-portrait {
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            border: 1px solid blue;
+            width: 100%;
+            @include mobile-landscape {
+                width: 31.25rem;
+            }
+            @include desktop-large {
+                width: 35vw;
+            }
+
+        }
+    }
+
+}

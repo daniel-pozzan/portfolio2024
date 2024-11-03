@@ -13,9 +13,10 @@
         gap: calc(1.188rem + 1vw);
     }
     &__content {
-        @include flex(column, center, flex-end, 1.188rem);
+        @include flex(column, center, center, 1.188rem);
         @include laptop {
             gap: 2.188rem;
+            align-items: flex-end;
         }
         @include desktop-large {
             gap: calc(1.188rem + 1vw);
@@ -23,14 +24,12 @@
         &__title {
             @include section;
             position: relative;
-            padding-right: 7.25rem;
             @include mobile-landscape {
                 padding-right: 0;
             }
             &::after {
                 content: '';
                 display: block;
-                width: 6.25rem;
                 height: 0.25rem;
                 background-color: $color-dark-orange;
                 border-top-left-radius: 0.125rem;
@@ -38,15 +37,19 @@
                 position: absolute;
                 right: 0;
                 top: 50%;
-                @include mobile-landscape {
+                width: 300%;
+                transform: translateX(105%);
+                @include laptop {
                     width: 100%;
-                    transform: translateX(105%);
                 }
             }
         }
         &__paragraph {
             @include body;
-            text-align: end;
+            text-align: center;
+            @include laptop {
+                text-align: end;
+            }
         }
     }
 

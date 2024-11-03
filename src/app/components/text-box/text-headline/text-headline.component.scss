@@ -1,0 +1,42 @@
+@import '../../../../styles.scss';
+
+:host {
+    display: block;
+}
+.text-headline {
+    @include flex(column, center, center);
+    margin-block: 4.5rem;
+    gap: calc(1.188rem + 1vw);
+    &__title {
+        @include section;
+        position: relative;
+
+        &::before, &::after {
+            content: "";
+            display: block;
+            height: 0.25rem;
+            background-color: $color-dark-orange;
+            border-top-left-radius: 0.125rem;
+            border-bottom-left-radius: 0.125rem;
+            position: absolute;
+            top: 50%;
+
+        }
+
+        &::after {
+            width: 300%;
+            right: 0;
+            transform: translateX(calc(100% + 2vw));
+        }
+
+        &::before {
+            width: 6.25rem;
+            left: 0;
+            transform: translateX(calc(-100% - 2vw));
+        }
+    }
+
+    &__text {
+        @include body;
+    }
+}

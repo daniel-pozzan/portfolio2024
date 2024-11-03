@@ -21,11 +21,10 @@ export class SkillIconContainerComponent implements AfterViewInit {
         clickable: true,
       },
       grabCursor: true,
-      autoplay: {
-        delay: 2500,
-      },
+      // autoplay: {
+      //   delay: 2500,
+      // },
       breakpoints: {
-        // when window width is >= 320px
         320: {
           slidesPerView: 3,
           grid: {
@@ -33,14 +32,6 @@ export class SkillIconContainerComponent implements AfterViewInit {
           },
           spaceBetween: 10,
         },
-        // when window width is >= 576px
-        // 576: {
-        //   slidesPerView: 3,
-        //   grid: {
-        //     rows: 2,
-        //   },
-        // },
-        // when window width is >= 992px
         992: {
           slidesPerView: 3,
           grid: {

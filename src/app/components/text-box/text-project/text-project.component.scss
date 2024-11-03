@@ -1,0 +1,27 @@
+@import '../../../../styles.scss';
+
+.text-project {
+    border: 1px solid orangered;
+    @include flex(column, center, center, 2rem);
+    @include laptop {
+        align-items: flex-start;
+    }
+    &__title {
+        @include t5-bold;
+        color: $color-dark-orange;
+    }
+    &__subtitle {
+        @include subtitles;
+        color: $color-light-orange;
+    }
+    &__text {
+        @include body;
+        text-align: center;
+        @include laptop {
+            text-align: left;
+        }
+    }
+    &__buttons {
+        @include flex(row, center, center, 2rem);
+    }
+}

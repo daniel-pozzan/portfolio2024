@@ -1,0 +1,8 @@
+<div class="project-card" [ngClass]="{'project-card--reverse': reverse}">
+    <div *ngIf="image" class="project-card__image">
+        <img [src]="image" [alt]="title">
+    </div>
+    <div class="project-card__content">
+        <app-text-project></app-text-project>
+    </div>
+</div>

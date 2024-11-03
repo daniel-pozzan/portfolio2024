@@ -69,8 +69,10 @@
 }
 
 @mixin t5-bold {
-    // font-size: $font-size-32;
-    font-size: calc(1.18rem + 2vw);
+    font-size: $font-size-32;
+    @include desktop-large {
+        font-size: calc(1rem + 1.2vw);
+    }
     line-height: 120%;
     font-weight: 700;
 }
