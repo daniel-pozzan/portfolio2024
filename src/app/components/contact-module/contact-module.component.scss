@@ -1,0 +1,56 @@
+@import '../../../styles.scss';
+
+.contact-module {
+    @include grid(12, auto, 2rem);
+    &__item {
+        &--col-5 {
+            grid-column: span 12;
+            @include tablet {
+                grid-column: span 5;
+            }
+        }
+        &--text {
+            @include flex(column, center, center);
+            margin-bottom: 2rem;
+            @include tablet {
+                display: initial;
+                margin-bottom: 0;
+            }
+            app-text-contact {
+                display: block;
+                width: 80%;
+                @include tablet {
+                    width: initial;
+                    display: initial;
+                }
+            }
+        }
+        &--col-7 {
+            grid-column: span 12;
+            @include tablet {
+                grid-column: span 7;
+            }
+        }
+        &--col-12 {
+            grid-column: span 12;
+        }
+        &--go-up-icon {
+            min-height: 4rem;
+            margin-bottom: 2rem;
+            position: relative;
+            app-go-up-icon {
+                cursor: pointer;
+                position: absolute;
+                bottom: 0;
+                right: calc((100% / 12) - 2rem);
+
+                &:hover ::ng-deep svg rect {
+                    stroke: $color-light-orange;
+                }
+                &:hover ::ng-deep svg path {
+                    fill: $color-light-orange;
+                }
+            }
+        }
+    }
+}

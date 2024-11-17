@@ -1,0 +1,80 @@
+@import '../../../../styles.scss';
+
+.contact-form {
+    @include flex(column, center, center, 2rem);
+    &__field {
+        width: 80%;
+        position: relative;
+        app-error-icon, app-valid-icon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        @include flex(column, center, flex-start, .5rem);
+        &__agree {
+            @include flex(row, flex-start, center, 1.5rem);
+        }
+        &__error {
+            color: $color-dark-orange;
+        }
+        &__input {
+            width: 100%;
+            outline: none;
+            background-color: $color-blue-bg;
+            padding: 1rem;
+            border: 1px solid $color-dark-orange;
+            border-radius: 0.625rem;
+            &--valid {
+                border: 1px solid $color-valid;
+            }
+        } 
+        &__textarea {
+            width: 100%;
+            outline: none;
+            background-color: $color-blue-bg;
+            padding: 1rem;
+            height: 12.5rem;
+            border: 1px solid $color-dark-orange;
+            border-radius: 0.625rem;
+            &--valid {
+                border: 1px solid $color-valid;
+            }
+        }
+        &__checkbox {
+            // Hide the default checkbox
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 1.5rem;
+            min-width: 1.5rem;
+            height: 1.5rem;
+            border: 2px solid $color-light-orange; // Border color
+            border-radius: 3px;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+
+            &:checked {
+                background-color: $color-blue-bg; // Checkmark color
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 3px;
+                    left: 7px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid $color-light-orange; // Checkmark color
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        &__checkbox-label {
+            &--link {
+                color: $color-dark-orange;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -9,6 +9,7 @@ import { FrontComponent } from "./sections/front/front.component";
 import { AboutComponent } from './sections/about/about.component';
 import { SkillsComponent } from './sections/skills/skills.component';
 import { PortfolioComponent } from './sections/portfolio/portfolio.component';
+import { ContactComponent } from './sections/contact/contact.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -20,7 +21,8 @@ import { PortfolioComponent } from './sections/portfolio/portfolio.component';
     FrontComponent,
     AboutComponent,
     SkillsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

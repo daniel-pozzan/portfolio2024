@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainButtonType } from '../../../shared/enums/main-button-type.enums';
 import { ViewportType } from '../../../shared/enums/viewport-type.enums';
@@ -14,6 +14,8 @@ export class MainButtonComponent {
   @Input() viewport: ViewportType = ViewportType.DESKTOP;
   @Input() type: MainButtonType;
   @Input() label: string;
+  @Input() disabled: boolean = false;
+  @Output() clickTrigger: EventEmitter<void> = new EventEmitter<void>();
 
   public isActive: boolean = false;
 
@@ -22,8 +24,9 @@ export class MainButtonComponent {
     this.label = 'Text'
   }
 
-  scrollToContactMobile() {
+  handleClick() {
     this.isActive = true;
+    this.clickTrigger.emit();
     setTimeout(() => {
       this.isActive = false;
     }, 1000);

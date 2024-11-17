@@ -10,6 +10,13 @@
     border-style: solid;
     border-radius: 0.625rem;
     padding: 1.5rem;
+    cursor: pointer;
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: $color-grey;
+    }
+
     @include desktop-large {
         height: calc(1rem + 3vw);
         border-radius: 1rem;
@@ -18,13 +25,14 @@
         height: 3.063rem;
         @include body;
     }
-    &[type='default']{
+    &[type='default']:not(:disabled){
         color: $color-white;
         border-color: $color-light-orange;
         background-color: transparent;
         background-image: radial-gradient(circle at 50% 50%, $color-light-orange 1%, transparent 1%);
         background-position: 50% 50%;
         background-size: 10% 10%;
+        background-repeat: no-repeat;
         transition: background-size 0.3s linear;
         @include laptop {
             &:hover {
@@ -40,7 +48,7 @@
             }
         }
     }
-    &[type='primary']{
+    &[type='primary']:not(:disabled){
         color: $color-white;
         background-image: radial-gradient(circle at 50% 50%, $color-dark-orange 1%, $color-light-orange 1%);
         background-position: 50% 50%;
@@ -62,7 +70,7 @@
             }
         }
     }
-    &[type='secondary']{
+    &[type='secondary']:not(:disabled){
         color: $color-white;
         border-color: $color-dark-orange;
         background-image: radial-gradient(circle at 50% 50%, $color-light-orange 1%, $color-dark-orange 1%);
@@ -84,7 +92,7 @@
             }
         }
     }
-    &[type='tertiary']{
+    &[type='tertiary']:not(:disabled){
         color: $color-black;
         border-color: $color-white;
         background-color: $color-white;

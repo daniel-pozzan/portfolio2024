@@ -1,4 +1,4 @@
 <div class="text-headline">
-    <h2 class="text-headline__title" [innerHTML]="headline"></h2>
-    <p class="text-headline__text" [innerHTML]="text"></p>
+    <h2 class="text-headline__title" [ngClass]="{'text-headline__title--reverse': reverse}" [innerHTML]="headline"></h2>
+    <p *ngIf="text" class="text-headline__text" [innerHTML]="text"></p>
 </div>

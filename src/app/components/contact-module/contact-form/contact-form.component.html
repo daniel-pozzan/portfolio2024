@@ -1,0 +1,37 @@
+<form class="contact-form"  [formGroup]="contactForm">
+    <div class="contact-form__field">
+        <input [ngClass]="{'contact-form__field__input--valid': contactForm.get('name')?.valid}" formControlName="name" class="contact-form__field__input" type="text" placeholder="Your name">
+        <div class="contact-form__field__error" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+            Name is required
+        </div>
+        <app-error-icon *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"></app-error-icon>
+        <app-valid-icon *ngIf="contactForm.get('name')?.valid"></app-valid-icon>
+    </div>
+    <div class="contact-form__field">
+        <input [ngClass]="{'contact-form__field__input--valid': contactForm.get('email')?.valid}" formControlName="email" class="contact-form__field__input" type="email" placeholder="Your email">
+        <div class="contact-form__field__error" *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+            Enter a valid email
+        </div>
+        <app-error-icon *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"></app-error-icon>
+        <app-valid-icon *ngIf="contactForm.get('email')?.valid"></app-valid-icon>
+    </div>
+    <div class="contact-form__field">
+        <textarea [ngClass]="{'contact-form__field__textarea--valid': contactForm.get('message')?.valid}" formControlName="message" class="contact-form__field__textarea" placeholder="Your message"></textarea>
+        <div class="contact-form__field__error" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+            Message is required
+        </div>
+        <app-error-icon *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"></app-error-icon>
+        <app-valid-icon *ngIf="contactForm.get('message')?.valid"></app-valid-icon>
+    </div>
+    <div class="contact-form__field contact-form__field--agree">
+        <div class="contact-form__field__agree">
+            <input formControlName="privacyPolicy" class="contact-form__field__checkbox" type="checkbox">
+            <label class="contact-form__field__checkbox-label" for="contact-form__field__checkbox">I've read the <a class="contact-form__field__checkbox-label--link" href="">privacy policy</a> and agree to the processing of my data as outlined</label>
+        </div>
+        <div class="contact-form__field__error" *ngIf="contactForm.get('privacyPolicy')?.invalid && contactForm.get('privacyPolicy')?.touched">
+            You must agree before submitting.
+        </div>
+    </div>
+    <app-main-button (clickTrigger)="onSubmit()" [disabled]="contactForm.invalid" [type]="MainButtonType.PRIMARY" [label]="'Send message :)'"></app-main-button>
+</form>
+

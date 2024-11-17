@@ -1,0 +1,11 @@
+@import '../../../../styles.scss';
+
+.text-contact {
+    &__title {
+        @include t5-bold;
+        margin-bottom: 1.5rem;
+    }
+    &__body {
+        @include body;
+    }
+}

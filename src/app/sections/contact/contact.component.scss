@@ -1,14 +1,8 @@
 @import '../../../styles.scss';
 
-.section-wrapper {
+.contact-wrapper {
     @include flex(column, center, center);
-    overflow-x: hidden;
     .section-grid {
         @include grid(repeat(12, 1fr), auto);
-        &__item {
-            grid-column: span 12;
-            margin-bottom: 4.5rem;
-        }
     }
 }
-
