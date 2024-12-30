@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+.footer-wrapper {
+    height: 23rem;
+    @include flex(row, center, center);
+    @include tablet {
+        height: 18rem;
+    }
+
+}

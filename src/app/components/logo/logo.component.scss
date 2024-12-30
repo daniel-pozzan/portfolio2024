@@ -1,17 +1,21 @@
 @import '../../../styles.scss';
 
 svg {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     @include laptop {
-        width: 100px;
-        height: 100px;
+        width: 6.25rem;
+        height: 6.25rem;
     }
     @include mobile-portrait {
-        margin-left: 32px;
-        margin-top: 8px;
-        width: 60px;
-        height: 60px;
+        // margin-left: 2rem;
+        // margin-top: 0.5rem;
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+    @include desktop-large {
+        width: 6vw;
+        height: 6vw;
     }
     position: relative;
     z-index: 2;

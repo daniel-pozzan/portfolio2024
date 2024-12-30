@@ -10,6 +10,7 @@ import { AboutComponent } from './sections/about/about.component';
 import { SkillsComponent } from './sections/skills/skills.component';
 import { PortfolioComponent } from './sections/portfolio/portfolio.component';
 import { ContactComponent } from './sections/contact/contact.component';
+import { FooterComponent } from './sections/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -22,7 +23,8 @@ import { ContactComponent } from './sections/contact/contact.component';
     AboutComponent,
     SkillsComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
