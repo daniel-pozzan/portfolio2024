@@ -44,6 +44,10 @@
                 bottom: 0;
                 right: calc((100% / 12) - 2rem);
 
+                @include mobile-portrait {
+                    right: calc(((100% / 12) - 2rem) * 2);
+                }
+
                 &:hover ::ng-deep svg rect {
                     stroke: $color-light-orange;
                 }

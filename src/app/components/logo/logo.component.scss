@@ -1,0 +1,69 @@
+@import '../../../styles.scss';
+
+svg {
+    width: 80px;
+    height: 80px;
+    @include laptop {
+        width: 100px;
+        height: 100px;
+    }
+    @include mobile-portrait {
+        margin-left: 32px;
+        margin-top: 8px;
+        width: 60px;
+        height: 60px;
+    }
+    position: relative;
+    z-index: 2;
+}
+
+.cls-1 {
+    fill: url(#linear-gradient-2);
+    opacity: .41;
+  }
+
+  .cls-1, .cls-2, .cls-3, .cls-4 {
+    mix-blend-mode: multiply;
+  }
+
+  .cls-5 {
+    fill: none;
+  }
+
+  .cls-6 {
+    fill: url(#linear-gradient-4);
+    mix-blend-mode: soft-light;
+  }
+
+  .cls-2 {
+    fill: url(#linear-gradient-6);
+  }
+
+  .cls-2, .cls-3 {
+    opacity: .75;
+  }
+
+  .cls-7 {
+    fill: #3c2415;
+  }
+
+  .cls-8 {
+    fill: url(#linear-gradient-3);
+  }
+
+  .cls-9 {
+    isolation: isolate;
+  }
+
+  .cls-3 {
+    fill: url(#linear-gradient-7);
+  }
+
+  .cls-4 {
+    fill: url(#linear-gradient-5);
+    opacity: .46;
+  }
+
+  .cls-10 {
+    fill: url(#linear-gradient);
+  }
