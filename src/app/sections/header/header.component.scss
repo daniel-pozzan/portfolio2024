@@ -3,6 +3,7 @@
 .header-wrapper {
     @include mobile-portrait {
         height: 10vh;
+        overflow: hidden;
     }
     height: 18vh;
     background-image: linear-gradient( $color-blue-bg-opacity, transparent);
