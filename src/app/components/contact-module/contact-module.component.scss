@@ -2,6 +2,9 @@
 
 .contact-module {
     @include grid(12, auto, 2rem);
+    @include mobile-portrait {
+        column-gap: 0;
+    }
     &__item {
         &--col-5 {
             grid-column: span 12;
@@ -43,10 +46,6 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
-
-                @include mobile-portrait {
-                    right: calc(((100% / 12) - 2rem) * 2);
-                }
 
                 &:hover ::ng-deep svg rect {
                     stroke: $color-light-orange;
