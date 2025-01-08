@@ -2,7 +2,7 @@
 
 .contact-form {
     @include flex(column, center, center, 2rem);
-    @include mobile-portrait {
+    @include tablet {
         align-items: flex-end;
     }
     &__field {
