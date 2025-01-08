@@ -21,5 +21,8 @@ body {
 
 .container {
     max-width: 80vw;
+    @include mobile-portrait {
+        max-width: 85vw;
+    }
     border: 1px solid white;
 }
