@@ -6,6 +6,7 @@
 @import 'styles/mixins/flexgrid';
 @import 'styles/mixins/position';
 @import 'styles/mixins/breakpoints';
+@import 'styles/mixins/classes';
 
 body {
     background-color: $color-blue-bg !important;
@@ -19,11 +20,6 @@ body {
 }
 
 .container {
-    max-width: 93vw;
-    @include desktop-large {
-        max-width: 80vw;
-    }
-    @include mobile-portrait {
-        max-width: initial;
-    }
+    max-width: 80vw;
+    border: 1px solid white;
 }

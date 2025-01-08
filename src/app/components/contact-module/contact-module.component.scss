@@ -42,7 +42,7 @@
                 cursor: pointer;
                 position: absolute;
                 bottom: 0;
-                right: calc((100% / 12) - 2rem);
+                right: 0;
 
                 @include mobile-portrait {
                     right: calc(((100% / 12) - 2rem) * 2);

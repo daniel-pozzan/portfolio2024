@@ -6,14 +6,6 @@
         flex-direction: row;
         gap: 0;
     }
-    app-logo ::ng-deep svg {
-        width: 3.75rem;
-        height: 3.75rem;
-        @include desktop-large {
-            width: 5vw;
-            height: 5vw;
-        }
-    }
     &__logo {
         @include flex(column, center, center, 0.5rem);
         @include tablet {
@@ -42,18 +34,5 @@
     &__socials {
         @include flex(row, center, center);
         gap: 1.813rem;
-        app-social-button ::ng-deep .social-button {
-            width: 2.5rem !important;
-            height: 2.5rem !important;
-            @include desktop-large {
-                width: 3vw !important;
-                height: 3vw !important;
-            }
-            @include flex(row, center, center);
-            svg {
-                width: 90% !important;
-                height: 90% !important;
-            }
-        }
     }
 }

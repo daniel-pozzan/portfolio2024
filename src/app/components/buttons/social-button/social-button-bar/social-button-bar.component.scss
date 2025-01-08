@@ -8,30 +8,25 @@
     @include flex(row, center, center, 2rem);
     width: fit-content;
     position: relative;
-    @include desktop-large {
-        gap: calc(2rem + 0.5vw);
+    @include mobile-portrait {
+        gap: 1rem;
+        width: 100%;
+        justify-content: space-between;
     }
-
+    @include desktop-large {
+        gap: 2.5rem;
+    }
+    @include desktop-x-large {
+        gap: 3rem;
+    }
+    @include desktop-xx-large {
+        gap: 2.5vw;
+    }
     &::after {
-        content: '';
-        display: block;
-        height: 0.25rem;
-        width: 6.25rem;
-        background-color: $color-dark-orange;
-        border-top-left-radius: 0.125rem;
-        border-bottom-left-radius: 0.125rem;
-        @include mobile-landscape {
-            position: absolute;
-            right: 0;
-            width: 100%;
-            transform: translate(105%);
-        }
+        @include after-line;
     }
 
     &__email {
-        @include mobile-portrait {
-            display: none;
-        }
         @include subtitles;
     }
 }

@@ -17,6 +17,9 @@
             content: "";
             display: block;
             height: 0.25rem;
+            @include desktop-xx-large {
+                height: 0.25vw;
+            }
             background-color: $color-dark-orange;
             border-top-left-radius: 0.125rem;
             border-bottom-left-radius: 0.125rem;
@@ -41,12 +44,20 @@
             &::before {
                 width: 300%;
                 left: 0;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0.125rem;
+                border-bottom-right-radius: 0.125rem;
                 transform: translateX(calc(-100% - 2vw));
             }
 
             &::after {
                 width: 6.25rem;
                 right: 0;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0.125rem;
+                border-bottom-right-radius: 0.125rem;
                 transform: translateX(calc(100% + 2vw));
             }
         }

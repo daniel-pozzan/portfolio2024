@@ -2,6 +2,9 @@
 
 .contact-form {
     @include flex(column, center, center, 2rem);
+    @include mobile-portrait {
+        align-items: flex-end;
+    }
     &__field {
         width: 80%;
         position: relative;

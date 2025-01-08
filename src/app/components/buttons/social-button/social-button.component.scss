@@ -5,12 +5,16 @@
     width: 1.875rem;
     cursor: pointer;
     @include desktop {
-        height: calc(1.875rem + 1vw);
-        width: calc(1.875rem + 1vw);
+        height: 2.25rem;
+        width: 2.25rem;
     }
-    @include desktop-large {
-        height: calc(1.875rem + 1.5vw);
-        width: calc(1.875rem + 1.5vw);
+    @include desktop-x-large {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    @include desktop-xx-large {
+        height: 2.5vw;
+        width: 2.5vw;
     }
 }
 

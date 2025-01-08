@@ -4,17 +4,23 @@ svg {
     height: 80px;
     position: absolute;
     width: 80px;
+    right: 0;
+    cursor: pointer;
+    transform: translateX(25%);
   }
 
   .plate {
     height: 80px;
     width: 80px;
   }
+  .plate2 {
+    position: relative;
+  }
   .burger {
     filter: url(#gooeyness);
   }
   .x {
-    transform: scale(0);
+    transform: scale(0) translateX(25%);
     transition: transform 400ms;
   }
   .line {
@@ -35,7 +41,7 @@ svg {
   }
 
   .active .x {
-    transform: scale(1);
+    transform: scale(1) translateX(25%);
     transition: transform 400ms 350ms;
   }
 

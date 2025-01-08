@@ -17,13 +17,13 @@ export class SkillIconContainerComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     const swiperParams = {
-      pagination: {
-        clickable: true,
-      },
-      grabCursor: true,
-      // autoplay: {
-      //   delay: 2500,
+      // pagination: {
+      //   clickable: true,
       // },
+      grabCursor: true,
+      autoplay: {
+        delay: 2500,
+      },
       breakpoints: {
         320: {
           slidesPerView: 3,

@@ -1,0 +1,19 @@
+@import '../../../../styles.scss';
+
+svg {
+    cursor: pointer;
+    width: 2.438rem;
+    height: 2.438rem;
+    @include desktop-large {
+        width: 3rem;
+        height: 3rem;
+    }
+    @include desktop-xx-large {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    rect {
+        width: 95%;
+        height: 95%;
+    }
+}
