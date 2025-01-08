@@ -12,6 +12,10 @@ body {
     background-color: $color-blue-bg !important;
 }
 
+app-front, app-root, app-header {
+    display: block;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
