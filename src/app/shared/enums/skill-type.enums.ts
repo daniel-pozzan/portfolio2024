@@ -15,5 +15,7 @@ export enum SkillType {
     DOCKER = 'Docker',
     DIRECTUS = 'Directus',
     API = 'API',
-    FIGMA = 'Figma'
+    FIGMA = 'Figma',
+    PHOTOSHOP = 'Photoshop',
+    ILLUSTRATOR = 'Illustrator'
 }
