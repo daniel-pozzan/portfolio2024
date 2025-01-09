@@ -9,6 +9,9 @@
     @include mobile-landscape {
         padding: 0;
     }
+    @include mobile-portrait {
+        margin-top: 3rem;
+    }
     width: 100%;
     @include flex(column, center, flex-start, 1.188rem);
     @include laptop {

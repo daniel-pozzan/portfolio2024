@@ -11,7 +11,7 @@
     @include mobile-portrait {
         gap: 1rem;
         width: 100%;
-        justify-content: space-between;
+        flex-direction: column;
     }
     @include desktop-large {
         gap: 2.5rem;
@@ -21,6 +21,21 @@
     }
     @include desktop-xx-large {
         gap: 2.5vw;
+    }
+    &__icons {
+        @include flex(row, center, center, 2rem);
+        @include mobile-portrait {
+            gap: 1rem;
+        }
+        @include desktop-large {
+            gap: 2.5rem;
+        }
+        @include desktop-x-large {
+            gap: 3rem;
+        }
+        @include desktop-xx-large {
+            gap: 2.5vw;
+        }
     }
     &::after {
         @include after-line;
