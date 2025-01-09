@@ -24,10 +24,11 @@
             }
             app-text-contact {
                 display: block;
-                width: 80%;
+                width: 100%;
                 @include tablet {
                     width: initial;
                     display: initial;
+                    width: 80%;
                 }
             }
         }

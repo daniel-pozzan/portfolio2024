@@ -20,6 +20,12 @@
     }
     &__title {
         @include section;
+        width: 100%;
+        text-align: center;
+        @include laptop {
+            text-align: left;
+            width: unset;
+        }
     }
     &__content {
         &__text {
