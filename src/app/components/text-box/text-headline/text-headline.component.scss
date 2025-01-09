@@ -38,6 +38,9 @@
             width: 6.25rem;
             left: 0;
             transform: translateX(calc(-100% - 2vw));
+            @include mobile-portrait {
+                width: 3.25rem;
+            }
         }
 
         &--reverse {
@@ -59,6 +62,9 @@
                 border-top-right-radius: 0.125rem;
                 border-bottom-right-radius: 0.125rem;
                 transform: translateX(calc(100% + 2vw));
+                @include mobile-portrait {
+                    width: 3.25rem; 
+                }
             }
         }
     }

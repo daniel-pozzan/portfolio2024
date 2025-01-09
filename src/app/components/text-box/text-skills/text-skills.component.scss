@@ -16,7 +16,7 @@
         @include flex(column, center, center, 1.188rem);
         @include laptop {
             gap: 2.188rem;
-            align-items: flex-end;
+            align-items: flex-start;
         }
         @include desktop-large {
             gap: calc(1.188rem + 1vw);
@@ -34,9 +34,9 @@
         }
         &__paragraph {
             @include body;
-            text-align: center;
+            text-align: start;
             @include laptop {
-                text-align: end;
+                text-align: start;
             }
         }
     }

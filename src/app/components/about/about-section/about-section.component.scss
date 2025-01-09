@@ -13,7 +13,7 @@
     @include flex(column, center, flex-start, 1.188rem);
     @include laptop {
         width: calc(10rem + 35vw);
-        @include flex(column, center, flex-end, 2.188rem);
+        @include flex(column, center, flex-start, 2.188rem);
     }
     @include desktop-large {
         gap: calc(1.188rem + 1vw);
