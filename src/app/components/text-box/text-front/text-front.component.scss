@@ -36,7 +36,7 @@
         @include desktop-large {
             padding-top: calc(1rem + 0.5vw);
         }
-        @include flex(row, center, center);
+        @include flex(row, flex-start, center);
         @include laptop {
             justify-content: flex-start;
         }

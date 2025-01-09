@@ -28,5 +28,6 @@
 
     &__email {
         @include subtitles;
+        white-space: nowrap;
     }
 }
