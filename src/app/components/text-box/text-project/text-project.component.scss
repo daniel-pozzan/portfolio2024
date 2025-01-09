@@ -1,7 +1,7 @@
 @import '../../../../styles.scss';
 
 .text-project {
-    @include flex(column, center, center, 2rem);
+    @include flex(column, center, flex-start, 2rem);
     @include laptop {
         align-items: flex-start;
     }

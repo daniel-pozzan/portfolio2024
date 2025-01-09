@@ -6,7 +6,10 @@
         align-items: flex-end;
     }
     &__field {
-        width: 80%;
+        width: 100%;
+        @include tablet {
+            width: 80%;
+        }
         position: relative;
         app-error-icon, app-valid-icon {
             position: absolute;
@@ -19,6 +22,7 @@
         }
         &__error {
             color: $color-dark-orange;
+            margin-top: -1rem;
         }
         &__input {
             width: 100%;

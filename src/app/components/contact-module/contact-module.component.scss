@@ -13,7 +13,10 @@
             }
         }
         &--text {
-            @include flex(column, center, center);
+            @include flex(column, center, flex-start);
+            @include tablet {
+                align-items: center;
+            }
             margin-bottom: 2rem;
             @include tablet {
                 display: initial;
