@@ -4,6 +4,9 @@
     height: 82vh;
     position: relative;
     margin-top: 4rem;
+    @include laptop {
+        margin-top: 12rem;
+    }
 
     &__shade {
         position: absolute;

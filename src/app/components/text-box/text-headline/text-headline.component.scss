@@ -6,7 +6,10 @@
 .text-headline {
     @include flex(column, center, center);
     margin-top: 4.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4rem;
+    @include laptop {
+        margin-bottom: 8rem;
+    }
     gap: calc(1.188rem + 1vw);
     &__title {
         @include section;

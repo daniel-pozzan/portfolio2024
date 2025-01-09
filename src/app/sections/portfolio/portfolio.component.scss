@@ -3,12 +3,19 @@
 .section-wrapper {
     @include flex(column, center, center);
     overflow-x: hidden;
+    margin-top: 4rem;
+    @include laptop {
+        margin-top: 8rem;
+    }
     .section-grid {
         @include grid(repeat(12, 1fr), auto);
         row-gap: 3rem;
         &__item {
             grid-column: span 12;
             margin-bottom: 4.5rem;
+            @include laptop {
+                margin-bottom: 9rem;
+            }
         }
     }
 }
