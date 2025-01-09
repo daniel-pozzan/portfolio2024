@@ -3,7 +3,7 @@
 .text-project {
     @include flex(column, center, center, 2rem);
     @include laptop {
-        align-items: center;
+        align-items: flex-start;
     }
     &__title {
         @include t5-bold;

@@ -2,7 +2,7 @@
 
 .text-skills {
     margin-bottom: 1.188rem;
-    @include flex(column, center, center, 1.188rem);
+    @include flex(column, center, flex-start, 1.188rem);
     @include laptop {
         margin-bottom: 0;
     }

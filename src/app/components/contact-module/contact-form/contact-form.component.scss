@@ -101,7 +101,7 @@
         }
         &__button {
             width: 100%;
-            @include flex(row, center, center);
+            @include flex(row, flex-start, center);
         }
     }
 }
