@@ -13,7 +13,7 @@
             top: 1rem;
             right: 1rem;
         }
-        @include flex(column, center, flex-start, .5rem);
+        @include flex(column, center, flex-start, 2rem);
         &__agree {
             @include flex(row, flex-start, center, 1.5rem);
         }
@@ -23,10 +23,14 @@
         &__input {
             width: 100%;
             outline: none;
+            @include body;
             background-color: $color-blue-bg;
             padding: 1rem;
             border: 1px solid $color-dark-orange;
             border-radius: 0.625rem;
+            @include desktop-xx-large {
+                padding: 1vw;
+            }
             &--valid {
                 border: 1px solid $color-valid;
             }
@@ -34,6 +38,10 @@
         &__textarea {
             width: 100%;
             outline: none;
+            @include body;
+            @include desktop-xx-large {
+                padding: 1vw;
+            }
             background-color: $color-blue-bg;
             padding: 1rem;
             height: 12.5rem;
@@ -51,6 +59,11 @@
             width: 1.5rem;
             min-width: 1.5rem;
             height: 1.5rem;
+            @include desktop-xx-large {
+                width: 1.5vw;
+                min-width: 1.5vw;
+                height: 1.5vw;
+            }
             border: 2px solid $color-light-orange; // Border color
             border-radius: 3px;
             cursor: pointer;
@@ -67,6 +80,12 @@
                     left: 7px;
                     width: 5px;
                     height: 10px;
+                    @include desktop-xx-large {
+                        width: 0.5vw;
+                        top: 0;
+                        left: 0.4vw;
+                        height: 1vw;
+                    }
                     border: solid $color-light-orange; // Checkmark color
                     border-width: 0 2px 2px 0;
                     transform: rotate(45deg);
@@ -74,10 +93,15 @@
             }
         }
         &__checkbox-label {
+            @include body;
             &--link {
                 color: $color-dark-orange;
                 text-decoration: none;
             }
+        }
+        &__button {
+            width: 100%;
+            @include flex(row, center, center);
         }
     }
 }

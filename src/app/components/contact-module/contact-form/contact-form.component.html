@@ -31,7 +31,9 @@
         <div class="contact-form__field__error" *ngIf="contactForm.get('privacyPolicy')?.invalid && contactForm.get('privacyPolicy')?.touched">
             You must agree before submitting.
         </div>
+        <div class="contact-form__field__button">
+            <app-main-button (clickTrigger)="onSubmit()" [disabled]="contactForm.invalid" [type]="MainButtonType.PRIMARY" [label]="'Send message :)'"></app-main-button>
+        </div>
     </div>
-    <app-main-button (clickTrigger)="onSubmit()" [disabled]="contactForm.invalid" [type]="MainButtonType.PRIMARY" [label]="'Send message :)'"></app-main-button>
 </form>
 
