@@ -1,6 +1,8 @@
 @import '../../../../styles.scss';
 
 .text-contact {
+    position: relative;
+    z-index: 1;
     &__title {
         @include t5-bold;
         margin-bottom: 1.5rem;

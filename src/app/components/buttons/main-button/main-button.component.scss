@@ -2,6 +2,8 @@
 
 .main-button {
     // height: 3.625rem;
+    position: relative;
+    z-index: 1;
     height: calc(1.9rem + 2vw);
     text-decoration: none;
     @include subtitles;

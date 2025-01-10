@@ -4,13 +4,18 @@
     display: block;
 }
 .text-headline {
-    @include flex(column, center, center);
+    @include flex(column, center, center, 1.188rem);
     margin-top: 4.5rem;
     margin-bottom: 4rem;
+    @include mobile-portrait {
+        margin-bottom: 1.188rem;
+    }
     @include laptop {
         margin-bottom: 8rem;
     }
-    gap: calc(1.188rem + 1vw);
+    @include desktop-large {
+        gap: calc(1.188rem + 1vw);
+    }
     &__title {
         @include section;
         position: relative;

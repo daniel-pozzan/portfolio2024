@@ -1,6 +1,8 @@
 @import '../../../../styles.scss';
 
 .contact-form {
+    position: relative;
+    z-index: 1;
     @include flex(column, center, center, 2rem);
     @include tablet {
         align-items: flex-end;

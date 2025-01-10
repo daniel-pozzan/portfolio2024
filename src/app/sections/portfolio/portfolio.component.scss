@@ -4,6 +4,26 @@
     @include flex(column, center, center);
     overflow-x: hidden;
     margin-top: 4rem;
+    position: relative;
+    &__shade-center {
+        position: absolute;
+        width: 20rem;
+        right: 0;
+        transform: rotate(180deg) translate(-25%, 100%);
+        @include tablet {
+            width: 25rem;
+        }
+    }
+    &__shade-bottom {
+        position: absolute;
+        width: 30rem;
+        left: 0;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        @include tablet {
+            width: 35rem;
+        }
+    }
     @include laptop {
         margin-top: 8rem;
     }

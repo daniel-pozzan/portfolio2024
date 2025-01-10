@@ -1,6 +1,8 @@
 @import '../../../../styles.scss';
 
 .text-project {
+    position: relative;
+    z-index: 1;
     @include flex(column, center, flex-start, 2rem);
     @include laptop {
         align-items: flex-start;

@@ -10,6 +10,8 @@
         }
     }
     &__image {
+        position: relative;
+        z-index: 1;
         @include mobile-portrait {
             display: flex;
             justify-content: center;

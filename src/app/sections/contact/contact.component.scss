@@ -1,8 +1,23 @@
 @import '../../../styles.scss';
 
+
 .contact-wrapper {
     @include flex(column, center, center);
+    position: relative;
+    .shade {
+        position: absolute;
+        position: absolute;
+        right: 0;
+        width: 25rem;
+        transform: translate(50%);
+        @include tablet {
+            left: 0;
+            width: 30rem;
+            transform: translate(-50%);
+        }
+    }
     .section-grid {
         @include grid(repeat(12, 1fr), auto);
     }
 }
+
