@@ -1,0 +1,17 @@
+@import '../../../styles.scss';
+
+.impressum-wrapper {
+    height: 52vh;
+    margin-top: 18vh;
+    @include flex(column, center, center);
+    p {
+        @include body;
+    }
+
+    .impressum {
+        @include flex(column, center, flex-start, 1.188rem);
+        @include desktop-xx-large {
+            gap: calc(1.188rem + 1vw);
+        }
+    }
+}

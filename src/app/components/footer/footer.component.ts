@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { LogoComponent } from '../logo/logo.component';
+import { RouterModule } from '@angular/router';
 import { SocialButtonComponent } from '../buttons/social-button/social-button.component';
 import { SocialButtonType } from '../../shared/enums/social-button-type.enums';
 
 @Component({
   selector: 'app-footer-box',
   standalone: true,
-  imports: [LogoComponent, SocialButtonComponent],
+  imports: [SocialButtonComponent, RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

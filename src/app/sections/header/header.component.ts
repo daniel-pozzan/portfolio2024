@@ -4,11 +4,12 @@ import { MenuComponent } from '../../components/menu/menu.component';
 import { ViewportType } from '../../shared/enums/viewport-type.enums';
 import { BurgerCloseButtonComponent } from '../../components/buttons/burger-close-button/burger-close-button.component';
 import { LogoComponent } from '../../components/logo/logo.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, MenuComponent, BurgerCloseButtonComponent, LogoComponent],
+  imports: [CommonModule, MenuComponent, BurgerCloseButtonComponent, LogoComponent, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
