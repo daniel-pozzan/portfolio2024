@@ -12,4 +12,8 @@ import { SocialButtonType } from '../../shared/enums/social-button-type.enums';
 })
 export class FooterBoxComponent {
   public readonly SocialButtonType = SocialButtonType;
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header">
             <!-- <h1 class="header__logo">LOGO</h1> -->
-            <app-logo routerLink="/"></app-logo>
+            <app-logo routerLink="/" (click)="scrollToTop()"></app-logo>
             <app-menu
                 [viewport]="viewport"
                 [showMenu]="showMenu"

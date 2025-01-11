@@ -9,5 +9,5 @@
         <app-social-button [type]="SocialButtonType.EMAIL"></app-social-button>
         <app-social-button [type]="SocialButtonType.LINKEDIN"></app-social-button>
     </div>
-    <a class="footer__impressum--mobile" routerLink="/impressum">Impressum</a>
+    <a class="footer__impressum--mobile" (click)="scrollToTop()" routerLink="/impressum">Impressum</a>
 </div>

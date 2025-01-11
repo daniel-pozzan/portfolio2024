@@ -27,4 +27,8 @@ export class HeaderComponent {
   toggleMenu() {
     this.showMenu = !this.showMenu;
   }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
