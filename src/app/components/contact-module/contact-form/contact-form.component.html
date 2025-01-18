@@ -26,7 +26,7 @@
     <div class="contact-form__field contact-form__field--agree">
         <div class="contact-form__field__agree">
             <input formControlName="privacyPolicy" class="contact-form__field__checkbox" type="checkbox">
-            <label class="contact-form__field__checkbox-label" for="contact-form__field__checkbox">I've read the <a class="contact-form__field__checkbox-label--link" href="">privacy policy</a> and agree to the processing of my data as outlined</label>
+            <label class="contact-form__field__checkbox-label" for="contact-form__field__checkbox">I've read the <a class="contact-form__field__checkbox-label--link" [routerLink]="['/privacy-policy']">privacy policy</a> and agree to the processing of my data as outlined</label>
         </div>
         <div class="contact-form__field__error" *ngIf="contactForm.get('privacyPolicy')?.invalid && contactForm.get('privacyPolicy')?.touched">
             You must agree before submitting.

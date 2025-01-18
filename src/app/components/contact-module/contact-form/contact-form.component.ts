@@ -5,6 +5,7 @@ import { MainButtonComponent } from '../../buttons/main-button/main-button.compo
 import { MainButtonType } from '../../../shared/enums/main-button-type.enums';
 import { ErrorIconComponent } from '../error-icon/error-icon.component';
 import { ValidIconComponent } from '../valid-icon/valid-icon.component';
+import { RouterModule } from '@angular/router';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { ContactDialogService } from '../../../services/contact-dialog.service';
@@ -12,7 +13,7 @@ import { ContactDialogService } from '../../../services/contact-dialog.service';
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [CommonModule, MainButtonComponent, ReactiveFormsModule, ErrorIconComponent, ValidIconComponent, HttpClientModule],
+  imports: [CommonModule, MainButtonComponent, ReactiveFormsModule, ErrorIconComponent, ValidIconComponent, HttpClientModule, RouterModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })

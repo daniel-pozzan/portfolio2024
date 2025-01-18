@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+.privacy-policy-wrapper {
+    margin-top: 18vh;
+    @include flex(column, center, center);
+    p {
+        @include body;
+    }
+
+    .privacy-policy {
+        @include flex(column, center, flex-start, 1.188rem);
+        @include desktop-xx-large {
+            gap: calc(1.188rem + 1vw);
+        }
+    }
+}
