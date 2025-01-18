@@ -82,5 +82,8 @@
 
     &__text {
         @include body;
+        ::ng-deep span {
+            color: $color-dark-orange;
+        }
     }
 }

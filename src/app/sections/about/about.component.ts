@@ -18,17 +18,17 @@ export class AboutComponent {
 
   public readonly cardList = {
     title: 'About me',
-    description: 'Hi, I am a Front-end deverloper based in München, Germany(....)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor sem non tempus convallis. Integer et justo vitae urna finibus eleifend sit amet porttitor sapien. Donec sollicitudin massa vel lorem vestibulum efficitur. ',
+    description: 'I am a web developer living in Essen, North Rhine-Westphalia, Germany. With over two years of experience in software development, I specialize in building user-friendly and efficient web applications. Beyond coding, I am a food enthusiast who loves exploring new cuisines and experimenting in the kitchen. I enjoy reading about science and artificial intelligence, always eager to learn how these fields are shaping the future.',
     cards: [
       {
         icon: AboutIconType.LIGHTBULB,
         color: ColorType.LIGHT_ORANGE,
-        text: 'Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
+        text: 'I believe in continuous learning and pushing the boundaries of what technology can achieve to improve everyday life.'
       },
       {
         icon: AboutIconType.PUZZLE,
         color: ColorType.LIGHT_ORANGE,
-        text: 'Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
+        text: 'In my professional journey, I strive to create meaningful connections and contribute to projects that challenge and inspire me. Let’s connect and create something amazing together!'
       },
 
     ]

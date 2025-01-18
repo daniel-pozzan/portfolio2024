@@ -12,7 +12,9 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectCardComponent {
   @Input() image?: string;
-  @Input() title?: string;
+  @Input() title: string = 'Project';
+  @Input() subtitle: string = 'Lorem | Ipsum | Dolor | Sit | Amet';
+  @Input() text: string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nunc euismod, consectetur nunc eu, aliquam nunc. Nulla nec nunc euismod, consectetur nunc eu, aliquam nunc.';
   @Input() reverse: boolean = false;
   @Input() projectHref?: string;
   @Input() githubHref?: string;
