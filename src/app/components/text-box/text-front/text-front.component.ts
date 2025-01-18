@@ -19,8 +19,6 @@ export class TextFrontComponent {
   public readonly MainButtonType = MainButtonType;
 
   scrollToContact() {
-    setTimeout(() => {
-      // this.document.querySelector('app-contact')?.scrollIntoView({ behavior: 'smooth' });
-    }, 1000);
+    this.document.querySelector('app-contact')?.scrollIntoView({ behavior: 'smooth' });
   }
 }
