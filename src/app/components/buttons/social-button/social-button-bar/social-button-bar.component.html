@@ -2,7 +2,7 @@
     <p class="social-button-bar__email">mail&#64;daniel-pozzan.com</p>
     <div class="social-button-bar__icons">
         <app-social-button [type]="SocialButtonType.GITHUB"></app-social-button>
-        <app-social-button [type]="SocialButtonType.EMAIL"></app-social-button>
-        <app-social-button [type]="SocialButtonType.LINKEDIN"></app-social-button>
+        <a href="mailto:mail@daniel-pozzan.com"><app-social-button [type]="SocialButtonType.EMAIL"></app-social-button></a>
+        <a target="_blank" href="https://www.linkedin.com/in/daniel-pozzan-b8806093/"><app-social-button [type]="SocialButtonType.LINKEDIN"></app-social-button></a>
     </div>
 </div>

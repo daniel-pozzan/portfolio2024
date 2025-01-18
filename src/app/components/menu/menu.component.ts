@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuButtonComponent } from '../buttons/menu-button/menu-button.component';
 import { ViewportType } from '../../shared/enums/viewport-type.enums';
@@ -12,6 +12,12 @@ import { ViewportType } from '../../shared/enums/viewport-type.enums';
 })
 export class MenuComponent {
   @Input() viewport: ViewportType = ViewportType.DESKTOP;
-  @Input() menuItems: string[] = [];
+  @Input() menuItems: {label: string, fragment: string}[] = [];
   @Input() showMenu: boolean = false;
+
+  @Output() closeMenuTrigger = new EventEmitter<void>();
+
+  closeMenu() {
+    this.closeMenuTrigger.emit();
+  }
 }

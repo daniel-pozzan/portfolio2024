@@ -1,20 +1,20 @@
 <div class="section-wrapper">
     <div class="container">
-        <div class="section-headline">
+        <div class="section-headline" >
             <app-text-headline [headline]="'Portfolio'" [text]="'Explore a selection of my work here - Interact with projects to see my skills in action.'"></app-text-headline>
         </div>
         <div class="section-grid">
             <div class="section-grid__item">
-                <app-project-card [image]="'./assets/images/el_pollo_loco_resized.png'" [title]="'El Pollo Loco'"></app-project-card>
+                <app-project-card [projectHref]="'https://el-pollo-loco.daniel-pozzan.com/'" [githubHref]="'https://github.com/pozzandaniel/El-pollo-loco'" [image]="'./assets/images/el_pollo_loco_resized.png'" [title]="'El Pollo Loco'"></app-project-card>
             </div>
             <div class="section-grid__item">
-                <app-project-card [reverse]="true" [image]="'./assets/images/join_resized.png'" [title]="'Join'"></app-project-card>
+                <app-project-card [projectHref]="'https://join.daniel-pozzan.com/'" [githubHref]="'https://github.com/pozzandaniel/Join'" [reverse]="true" [image]="'./assets/images/join_resized.png'" [title]="'Join'"></app-project-card>
             </div>
             <div class="section-grid__item">
-                <app-project-card [image]="'./assets/images/ring_of_fire_resized.png'" [title]="'Ring of Fire'"></app-project-card>
+                <app-project-card [projectHref]="'https://ring-of-fire.daniel-pozzan.com/'" [githubHref]="'https://github.com/pozzandaniel/Ring-of-fire'" [image]="'./assets/images/ring_of_fire_resized.png'" [title]="'Ring of Fire'"></app-project-card>
             </div>
             <div class="section-grid__item">
-                <app-project-card [reverse]="true" [image]="'./assets/images/portfolio_resized.png'" [title]="'Portfolio'"></app-project-card>
+                <app-project-card [projectHref]="'https://www.daniel-pozzan.com/'" [githubHref]="'https://github.com/daniel-pozzan/portfolio2024'" [reverse]="true" [image]="'./assets/images/portfolio_resized.png'" [title]="'Portfolio'"></app-project-card>
             </div>
         </div>
     </div>

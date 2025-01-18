@@ -14,6 +14,17 @@ export class TextProjectComponent {
   @Input() title: string = 'Project';
   @Input() subtitle: string = 'Lorem | Ipsum | Dolor | Sit | Amet';
   @Input() text: string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nunc euismod, consectetur nunc eu, aliquam nunc. Nulla nec nunc euismod, consectetur nunc eu, aliquam nunc.';
+  @Input() projectHref?: string;
+  @Input() githubHref?: string;
+
 
   public readonly MainButtonType = MainButtonType;
+
+  navigate(type: string) {
+    if (type === 'project') {
+      window.open(this.projectHref, '_blank');
+    } else if (type === 'github') {
+      window.open(this.githubHref, '_blank');
+    }
+  }
 }

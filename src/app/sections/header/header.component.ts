@@ -17,15 +17,25 @@ export class HeaderComponent {
   @Input() viewport: ViewportType = ViewportType.DESKTOP;
 
   public showMenu: boolean;
+  public showBurger: boolean;
 
   ViewportType = ViewportType;
 
   constructor() {
     this.showMenu = false;
+    this.showBurger = true;
   }
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  closeMenu() {
+    this.toggleMenu();
+    this.showBurger = false;
+    setTimeout(() => {
+      this.showBurger = true;
+    }, 100);
   }
 
   scrollToTop() {

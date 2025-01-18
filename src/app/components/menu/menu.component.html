@@ -1,7 +1,8 @@
 <div class="desktop-menu" *ngIf="viewport === 'desktop'; else mobileMenu">
     <app-menu-button 
         *ngFor="let item of menuItems" 
-        [label]="item" 
+        [label]="item.label" 
+        [fragment]="item.fragment"
         [viewport]="viewport"
     ></app-menu-button>
 </div>
@@ -13,8 +14,10 @@
         <div class="mobile-menu" *ngIf="showMenu">
             <app-menu-button 
                 *ngFor="let item of menuItems" 
-                [label]="item" 
+                [label]="item.label" 
+                [fragment]="item.fragment"
                 [viewport]="viewport"
+                (closeMenu)="closeMenu()"
             ></app-menu-button>
         </div>
     </div>

@@ -5,8 +5,11 @@
 }
 .text-headline {
     @include flex(column, center, center, 1.188rem);
-    margin-top: 4.5rem;
+    margin-top: 8.5rem;
     margin-bottom: 4rem;
+    @include laptop {
+        margin-top: 4.5rem;
+    }
     @include mobile-portrait {
         margin-bottom: 1.188rem;
     }

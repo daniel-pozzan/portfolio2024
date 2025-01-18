@@ -56,9 +56,9 @@
         background-position: 50% 50%;
         background-size: 100% 100%;
         transition: background-size 0.3s linear;
+        border-color: $color-light-orange;
+        background-color: $color-light-orange;
         @include laptop {
-            border-color: $color-light-orange;
-            background-color: $color-light-orange;
             &:hover {
                 border-color: $color-light-orange;
                 background-image: radial-gradient(circle at 50% 50%, $color-dark-orange 1%, $color-light-orange 1%);

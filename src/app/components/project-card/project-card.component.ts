@@ -14,4 +14,6 @@ export class ProjectCardComponent {
   @Input() image?: string;
   @Input() title?: string;
   @Input() reverse: boolean = false;
+  @Input() projectHref?: string;
+  @Input() githubHref?: string;
 }

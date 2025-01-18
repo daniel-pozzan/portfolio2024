@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Inject, Input } from '@angular/core';
 import { MainButtonComponent } from '../../buttons/main-button/main-button.component';
 import { ViewportType } from '../../../shared/enums/viewport-type.enums';
 import { MainButtonType } from '../../../shared/enums/main-button-type.enums';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-text-front',
@@ -13,5 +14,13 @@ import { MainButtonType } from '../../../shared/enums/main-button-type.enums';
 export class TextFrontComponent {
   @Input() viewport: ViewportType = ViewportType.DESKTOP;
 
+  constructor(@Inject(DOCUMENT) private document: Document) {}
+
   public readonly MainButtonType = MainButtonType;
+
+  scrollToContact() {
+    setTimeout(() => {
+      // this.document.querySelector('app-contact')?.scrollIntoView({ behavior: 'smooth' });
+    }, 1000);
+  }
 }

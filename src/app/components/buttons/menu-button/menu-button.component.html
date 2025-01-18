@@ -1,1 +1,1 @@
-<a href="#" [ngClass]="{ 'active': active }" [attr.viewport]="viewport" (click)="activateItem()">{{ label }}</a>
+<a [ngClass]="{ 'active': active }" [attr.viewport]="viewport" (click)="activateItem($event)">{{ label }}</a>

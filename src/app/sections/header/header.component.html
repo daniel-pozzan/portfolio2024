@@ -4,14 +4,17 @@
             <!-- <h1 class="header__logo">LOGO</h1> -->
             <app-logo routerLink="/" (click)="scrollToTop()"></app-logo>
             <app-menu
+                (closeMenuTrigger)="closeMenu()"
                 [viewport]="viewport"
                 [showMenu]="showMenu"
                 [menuItems]="viewport === 'desktop' ? 
-                    ['About me', 'Skills', 'Portfolio'] : 
-                    ['About me', 'Skills', 'Portfolio', 'Contact']"
+                    [{label: 'About me', fragment: 'about'}, {label: 'Skills', fragment: 'skills'}, {label: 'Portfolio', fragment: 'portfolio'}] : 
+                    [{label: 'About me', fragment: 'about'}, {label: 'Skills', fragment: 'skills'}, {label: 'Portfolio', fragment: 'portfolio'}, {label: 'Contact', fragment: 'contact'}]"
             >
             </app-menu>
-            <app-burger-close-button (click)="toggleMenu()" *ngIf="viewport === ViewportType.MOBILE"></app-burger-close-button>
+            <ng-container *ngIf="showBurger">
+                <app-burger-close-button  (click)="toggleMenu()" *ngIf="viewport === ViewportType.MOBILE"></app-burger-close-button>
+            </ng-container>
         </div>
     </div>
 </div>

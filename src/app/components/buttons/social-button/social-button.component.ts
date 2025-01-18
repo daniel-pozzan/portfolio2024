@@ -29,6 +29,7 @@ export class SocialButtonComponent {
   }
 
   navigate(location: string) {
+    console.log(location);
     switch (location) {
       case 'github':
         this.document.defaultView?.open(environment.github, '_blank');

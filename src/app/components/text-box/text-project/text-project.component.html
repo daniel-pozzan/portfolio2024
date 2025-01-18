@@ -3,7 +3,7 @@
     <h4 class="text-project__subtitle" [innerHTML]="subtitle"></h4>
     <p class="text-project__text" [innerHTML]="text"></p>
     <div class="text-project__buttons">
-        <app-main-button [label]="'Live test'"></app-main-button>
-        <app-main-button [label]="'Github'" [type]="MainButtonType.SECONDARY"></app-main-button>
+        <app-main-button (click)="navigate('project')" [label]="'Live test'"></app-main-button>
+        <app-main-button (click)="navigate('github')" [label]="'Github'" [type]="MainButtonType.SECONDARY"></app-main-button>
     </div>
 </div>
