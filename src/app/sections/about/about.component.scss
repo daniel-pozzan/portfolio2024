@@ -1,11 +1,7 @@
 @import '../../../styles.scss';
 
 .about-section {
-    height: 82vh;
-    @include mobile-portrait {
-        height: 90vh;
-    }
-    @include flex(row, center, center);
+    @include flex(row, center, flex-start);
     &__box {
         @include flex(row, space-between, center);
         &__image {
