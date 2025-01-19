@@ -1,6 +1,13 @@
 @import '../../../styles.scss';
 
 .contact-module {
+    margin-top: 1.188rem;
+    @include laptop {
+        margin-top: 2.188rem;
+    }
+    @include desktop-large {
+        margin-top: calc(1.188rem + 1vw);
+    }
     @include grid(12, auto, 2rem);
     @include mobile-portrait {
         column-gap: 0;

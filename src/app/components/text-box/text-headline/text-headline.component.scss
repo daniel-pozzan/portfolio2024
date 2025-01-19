@@ -5,16 +5,8 @@
 }
 .text-headline {
     @include flex(column, center, center, 1.188rem);
-    margin-top: 8.5rem;
-    margin-bottom: 4rem;
     @include laptop {
-        margin-top: 4.5rem;
-    }
-    @include mobile-portrait {
-        margin-bottom: 1.188rem;
-    }
-    @include laptop {
-        margin-bottom: 8rem;
+        gap: 2.188rem;
     }
     @include desktop-large {
         gap: calc(1.188rem + 1vw);
@@ -84,6 +76,10 @@
         @include body;
         ::ng-deep span {
             color: $color-dark-orange;
+        }
+        margin-bottom: 4.5rem;
+        @include laptop {
+            margin-bottom: 9rem;
         }
     }
 }

@@ -1,0 +1,15 @@
+@import '../../../styles.scss';
+
+#about, #skills, #portfolio, #contact {
+    margin-top: 8.5rem;
+    // margin-bottom: 4rem;
+    @include laptop {
+        margin-top: 4.5rem;
+    }
+    // @include mobile-portrait {
+    //     margin-bottom: 1.188rem;
+    // }
+    // @include laptop {
+    //     margin-bottom: 8rem;
+    // }
+}

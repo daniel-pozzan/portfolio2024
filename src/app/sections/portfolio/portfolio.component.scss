@@ -3,7 +3,6 @@
 .section-wrapper {
     @include flex(column, center, center);
     overflow-x: hidden;
-    margin-top: 4rem;
     position: relative;
     &__shade-center {
         position: absolute;
@@ -23,9 +22,6 @@
         @include tablet {
             width: 35rem;
         }
-    }
-    @include laptop {
-        margin-top: 8rem;
     }
     .section-grid {
         @include grid(repeat(12, 1fr), auto);
