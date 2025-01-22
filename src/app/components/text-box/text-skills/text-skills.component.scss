@@ -35,8 +35,10 @@
         &__paragraph {
             @include body;
             text-align: start;
+            margin-bottom: 1.188rem;
             @include laptop {
                 text-align: start;
+                margin-bottom: 0;
             }
         }
     }
